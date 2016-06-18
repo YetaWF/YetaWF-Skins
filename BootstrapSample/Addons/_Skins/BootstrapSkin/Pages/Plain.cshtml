@@ -1,0 +1,33 @@
+﻿@*Copyright © 2016 Softel vdm, Inc. - http://yetawf.com/Documentation/YetaWF/Licensing*@
+@using global::YetaWF.Core.Pages
+@using global::YetaWF.Core.Modules
+@inherits global::YetaWF.Core.Pages.RazorPage
+@{
+    Manager.SetSkinOptions(UsingBootstrap: true, UsingBootstrapButtons: true, MinWidthForPopups: 970);
+    //Manager.AddOnManager.AddAddOnGlobal("Modernizr.com", "Modernizr");
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    [[Manager,-MetatagsHtml]]
+    [[Manager,-PageTitleHtml]]
+    [[PageOrSite,-FavIconLink]]
+    [[ThisPage,-CanonicalUrlLink]]
+    [[ThisPage,-HrefLangHtml]]
+</head>
+<body class="@Manager.PageCss("pageSkinPlain")">
+    <noscript><div class="yDivWarning" style="height:100px;text-align:center;vertical-align:middle">This site requires Javascript</div></noscript>
+
+    @(Html.RenderEditControl<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>())
+    @(Html.RenderPageControl<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>())
+
+    <div class="MainPane">
+        @RenderPane("", "MainPane AnyPane")
+    </div>
+
+    @Html.RenderUniqueModuleAddOns()
+</body>
+</html>

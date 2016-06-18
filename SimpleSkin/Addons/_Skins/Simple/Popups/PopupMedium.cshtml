@@ -1,0 +1,21 @@
+﻿@*Copyright © 2016 Softel vdm, Inc. - http://yetawf.com/Documentation/YetaWF/Licensing*@
+@using global::YetaWF.Core.Pages
+@using global::YetaWF.Core.Modules
+@inherits global::YetaWF.Core.Pages.RazorPage
+@{Manager.SetSkinOptions(700, 500, false);}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    [[Manager,-MetatagsHtml]]
+    [[Manager,-PageTitleHtml]]
+    [[PageOrSite,-FavIconLink]]
+    [[ThisPage,-CanonicalUrlLink]]
+    [[ThisPage,-HrefLangHtml]]
+</head>
+<body class="@Manager.PageCss("popupMedium")">
+    @RenderPane("", "MainPane AnyPane")
+    @Html.RenderUniqueModuleAddOns()
+</body>
+</html>

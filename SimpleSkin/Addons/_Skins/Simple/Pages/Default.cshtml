@@ -1,0 +1,86 @@
+﻿@*Copyright © 2016 Softel vdm, Inc. - http://yetawf.com/Documentation/YetaWF/Licensing*@
+@using global::YetaWF.Core.Pages
+@using global::YetaWF.Core.Modules
+@inherits global::YetaWF.Core.Pages.RazorPage
+@{Manager.SetSkinOptions();}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    [[Manager,-MetatagsHtml]]
+    [[Manager,-PageTitleHtml]]
+    [[PageOrSite,-FavIconLink]]
+    [[ThisPage,-CanonicalUrlLink]]
+    [[ThisPage,-HrefLangHtml]]
+</head>
+<body class="@Manager.PageCss("pageSkinDefault")">
+    <noscript><div class="yDivWarning" style="height:100px;text-align:center;vertical-align:middle">This site requires Javascript</div></noscript>
+    <div class="pageOuterWrapper">
+        <div class="pageWrapper">
+            <div class="pageHeader">
+                <div class="pageLogo">
+                    @(Html.RenderModule<global::YetaWF.Modules.Text.Modules.TextModule>(new Guid("{AFA55B5E-1CA5-43c7-B9B3-245C172E0819}"), m => {
+                        m.Name = "Page Logo (Skin)";
+                        m.ShowTitle = m.EditOnPage = m.WantSearch = m.WantFocus = false;
+                        m.CssClass = "skinLogo";
+                        m.Contents = "<img alt='YetaWF Logo' src='http://yetawf.com/Logo.jpg' />";
+                    }))
+                </div>
+                <div class="pageQuick">
+                    @(Html.RenderModule<global::YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
+                        m.Name = "Tiny Login (Skin)";
+                        m.CssClass = "skinTinyLogin";
+                    }))
+                    @if (Manager.CurrentSite.Localization) {
+                        @(Html.RenderModule<global::YetaWF.Modules.TinyLanguage.Modules.TinyLanguageModule>(new Guid("{E24356D7-9F90-42e6-A370-ECDB36FD34F5}"), m => {
+                            m.Name = "Tiny Language (Skin)";
+                            m.CssClass = "skinTinyLanguage";
+                        }))
+                    }
+                </div>
+            </div>
+            <div class="pageMenu">
+                @(Html.RenderModule<global::YetaWF.Modules.Menus.Modules.MainMenuModule>())
+            </div>
+
+            @RenderPane("Header", "HeaderPane AnyPane")
+
+            @RenderPane("", "MainPane AnyPane")
+
+            @using (PaneSet("PaneSetL2")) {
+                @RenderPane("PaneSetL2_LeftPane", "PaneSetL2_LeftPane AnyPane", Conditional: false)
+                @RenderPane("PaneSetL2_MainPane", "PaneSetL2_MainPane AnyPane", Conditional: false)
+            }
+
+            @using (PaneSet("PaneSet3")) {
+                @RenderPane("PaneSet3_LeftPane", "PaneSet3_LeftPane AnyPane", Conditional: false)
+                @RenderPane("PaneSet3_MainPane", "PaneSet3_MainPane AnyPane", Conditional: false)
+                @RenderPane("PaneSet3_RightPane", "PaneSet3_RightPane AnyPane", Conditional: false)
+            }
+
+            @using (PaneSet("PaneSetR2")) {
+                @RenderPane("PaneSetR2_MainPane", "PaneSetR2_MainPane AnyPane", Conditional: false)
+                @RenderPane("PaneSetR2_RightPane", "PaneSetR2_RightPane AnyPane", Conditional: false)
+            }
+
+            @RenderPane("Footer", "FooterPane AnyPane")
+
+            <div class="pageFooter">[[PageOrSite,CopyrightEvaluated]]</div>
+        </div>
+        @(Html.RenderModule<global::YetaWF.Modules.Sites.Modules.SiteSelectorModule>(m => {
+            m.CssClass = "skinSiteSelector";
+        }))
+        @(Html.RenderModule<global::YetaWF.Modules.Identity.Modules.LoginSelectorModule>(m => {
+            m.CssClass = "skinLoginSelector";
+        }))
+        @(Html.RenderModule<global::YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
+            m.CssClass = "skinLockedStatus";
+        }))
+        @(Html.RenderPageControl<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>())
+        @(Html.RenderEditControl<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>())
+
+        @Html.RenderUniqueModuleAddOns()
+    </div>
+</body>
+</html>
