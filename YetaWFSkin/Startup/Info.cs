@@ -1,4 +1,6 @@
-﻿using YetaWF.Core.Addons;
+﻿/* Copyright © 2016 Softel vdm, Inc. - http://yetawf.com/Documentation/YetaWF/Licensing */
+
+using YetaWF.Core.Addons;
 using YetaWF.Core.Localize;
 using YetaWF.Core.Packages;
 using YetaWF.Core.Pages;
