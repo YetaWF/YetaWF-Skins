@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿/* Copyright © 2016 Softel vdm, Inc. - http://yetawf.com/Documentation/YetaWF/Licensing */
+
+using System.Reflection;
 using System.Runtime.InteropServices;
 using YetaWF.Core.Packages;
 using YetaWF.PackageAttributes;
