@@ -6,13 +6,8 @@
 @inherits global::YetaWF.Core.Pages.RazorPage
 @{
     Manager.SetSkinOptions(UsingBootstrap: true, UsingBootstrapButtons:true, MinWidthForPopups: 970);
-    Manager.AddOnManager.AddAddOnGlobal("github.com.vadikom", "smartmenus"); // multilevel navbar
     //uncomment the following to use Modernizr with your skin (this is not required by the skin)
     //Manager.AddOnManager.AddAddOnGlobal("Modernizr.com", "Modernizr");
-    /* We need this to render the menu in the navbar - we're not using a module for this */
-    YetaWF.Modules.Menus.Modules.MainMenuModule mainMenuModule = (YetaWF.Modules.Menus.Modules.MainMenuModule)ModuleDefinition.Load(new Guid("{59909BB1-75F4-419f-B961-8569BB282131}"));
-    MenuList menuList = YetaWF.Modules.Menus.Controllers.MenuModuleController.GetEditMenu(Manager, mainMenuModule.Menu, mainMenuModule.ModuleGuid);
-
     // get the location of this skin's css files
     SkinDefinition skin = SkinDefinition.EvaluatedSkin(Manager.CurrentPage, Manager.IsInPopup);
     string cssUrl = Manager.GetCDNUrl(YetaWF.Core.Addons.VersionManager.FindSkinVersion(ref skin, Manager.IsInPopup).GetAddOnCssUrl());
@@ -38,16 +33,16 @@
             <button id="tabToggle" type="button" class="navbar-toggle pull-left">
                 <img alt="Index & Search" src="@(cssUrl)Icons/Browse.png">
             </button>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".yPageMenu">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            @menuList.Render(DivId, mainMenuModule.CssClass, RenderEngine: YetaWF.Core.Modules.ModuleAction.RenderEngineEnum.BootstrapSmartMenu)
-        </div>
+        @(Html.RenderModule<global::YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
+            m.Name = "Main Menu Module (Skin)";
+        }))
     </nav>
 
     @RenderPane("", "MainPane AnyPane")

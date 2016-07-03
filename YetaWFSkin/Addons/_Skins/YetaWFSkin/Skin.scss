@@ -7,7 +7,7 @@ $base-color: #666;
 $footer-bgcolor:#222;
 $footer-color:#aaa;
 
-$screen-sm : 970px;
+$screen-sm : 992px;
 
 /* GLOBALS */
 /* GLOBALS */
@@ -359,9 +359,15 @@ label {/* Bold labels are a bit harsh */
 /* TINY VISITORS MODULE */
 
 .YetaWF_Visitors_TinyVisitors {
-    float:right;
+    position:absolute;
+    right:15px;
+    top:40px;
 }
-
+@media (max-width: $screen-sm) {
+    .YetaWF_Visitors_TinyVisitors {
+        display:none;
+    }
+}
 /* Documentation */
 /* Documentation */
 /* Documentation */
@@ -412,3 +418,14 @@ body.pageSkinDocX {
         }
     }
 }
+
+/* MEGAMENU */
+/* MEGAMENU */
+/* MEGAMENU */
+
+/* Header (menu) */
+/* override max dropdown width for the dropdowns where the content is too large */
+/*.nav > li.dropdown .dropdown-menu {
+    max-width:50ch!important;
+}*/
+
