@@ -1,1 +1,2 @@
-﻿skin.js
+﻿js/bootstrap.min.js
+skin.js

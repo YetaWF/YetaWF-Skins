@@ -54,6 +54,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Addons\_Skins\BootstrapSkin\config.json" />
+    <None Include="Addons\_Skins\BootstrapSkin\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Addons\_Skins\BootstrapSkin\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Addons\_Skins\BootstrapSkin\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Addons\_Skins\BootstrapSkin\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Addons\_Skins\BootstrapSkin\Pages\Default.cshtml" />
     <None Include="Addons\_Skins\BootstrapSkin\Pages\Plain.cshtml" />
     <None Include="Addons\_Skins\BootstrapSkin\Popups\PopupMedium.cshtml" />
@@ -62,8 +67,14 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Addons\_Skins\BootstrapSkin\css\bootstrap-theme.css" />
+    <Content Include="Addons\_Skins\BootstrapSkin\css\bootstrap-theme.min.css" />
+    <Content Include="Addons\_Skins\BootstrapSkin\css\bootstrap.css" />
+    <Content Include="Addons\_Skins\BootstrapSkin\css\bootstrap.min.css" />
     <Content Include="Addons\_Skins\BootstrapSkin\filelistCSS.txt" />
     <Content Include="Addons\_Skins\BootstrapSkin\filelistJS.txt" />
+    <Content Include="Addons\_Skins\BootstrapSkin\fixup.js" />
+    <Content Include="Addons\_Skins\BootstrapSkin\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Addons\_Skins\BootstrapSkin\Icons\Add.png" />
     <Content Include="Addons\_Skins\BootstrapSkin\Icons\Browse.png" />
     <Content Include="Addons\_Skins\BootstrapSkin\Icons\Config.png" />
@@ -77,6 +88,8 @@
     <Content Include="Addons\_Skins\BootstrapSkin\Icons\Warning.png" />
     <None Include="Addons\_Skins\BootstrapSkin\Skin.scss" />
     <Content Include="Addons\_Skins\BootstrapSkin\Images\footer-bg.jpg" />
+    <Content Include="Addons\_Skins\BootstrapSkin\js\bootstrap.js" />
+    <Content Include="Addons\_Skins\BootstrapSkin\js\bootstrap.min.js" />
     <Content Include="Addons\_Skins\BootstrapSkin\Skin.js" />
     <Content Include="Addons\_Skins\BootstrapSkin\Skin.txt" />
     <Content Include="packages.config" />

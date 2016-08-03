@@ -3,7 +3,7 @@
 @using global::YetaWF.Core.Modules
 @inherits global::YetaWF.Core.Pages.RazorPage
 @{
-    Manager.SetSkinOptions(UsingBootstrap: true, UsingBootstrapButtons: true, MinWidthForPopups: 970);
+    Manager.SetSkinOptions(UsingBootstrap: true, UseDefaultBootstrap: false, UsingBootstrapButtons: true, MinWidthForPopups: 970);
     //Manager.AddOnManager.AddAddOnGlobal("Modernizr.com", "Modernizr");
 }
 <!DOCTYPE html>
@@ -20,10 +20,8 @@
 </head>
 <body class="@Manager.PageCss("pageSkinPlain")">
     <noscript><div class="yDivWarning" style="height:100px;text-align:center;vertical-align:middle">This site requires Javascript</div></noscript>
-
     @(Html.RenderEditControl<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>())
     @(Html.RenderPageControl<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>())
-
     <div class="MainPane">
         @RenderPane("", "MainPane AnyPane")
     </div>
