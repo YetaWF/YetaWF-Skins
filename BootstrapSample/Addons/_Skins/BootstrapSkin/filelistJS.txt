@@ -1,2 +1,3 @@
 ﻿js/bootstrap.min.js
 skin.js
+fixup.js
