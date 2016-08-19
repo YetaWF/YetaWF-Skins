@@ -173,7 +173,17 @@ label {/* Bold labels are a bit harsh */
             input[type='text'].yt_text80 {
                 width:100%;
             }
+            .yt_multistring {
+                width:100%;
+                .yt_multistring_text {
+                    margin-right:0;
+                }
+                input[type="text"].t_text80 {
+                    width:100%;
+                }
+            }
         }
+
         .t_labels.t_fillerabove {
             display:none;
         }
