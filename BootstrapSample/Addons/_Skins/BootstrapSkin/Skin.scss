@@ -220,6 +220,9 @@ label {/* Bold labels are a bit harsh */
         .t_labels.t_fillerabove {
             display:none;
         }
+        .t_labels.t_fillerbelow {
+            display:none;
+        }
     }
     label {
         color:$base-color;
