@@ -280,6 +280,9 @@ label {/* Bold labels are a bit harsh */
     left:1ch;
     top:20px;
     z-index:1500;
+    border-radius:5px;
+    background-color:antiquewhite;
+    padding:5px;
 }
 
 /* SKINLOGINSELECTOR */
@@ -294,7 +297,11 @@ label {/* Bold labels are a bit harsh */
 .skinLoginSelector.modStandard {
     position:absolute;
     left:1ch;
-    top:50px;
+    top:70px;
+    z-index:1500;
+    border-radius:5px;
+    background-color:antiquewhite;
+    padding:5px;
 }
 
 /* TINYLOGIN MODULE COSMETICS */
