@@ -7,7 +7,7 @@ $base-color: #666;
 $footer-bgcolor:#222;
 $footer-color:#aaa;
 
-$screen-sm : 992px;
+$screen-md : 992px;
 
 /* GLOBALS */
 /* GLOBALS */
@@ -187,42 +187,14 @@ label {/* Bold labels are a bit harsh */
     font-weight:normal;
 }
 
-/* On small screens, put labels above values, instead of next to each other */
+/* Small screens */
 
-@media (max-width: $screen-sm) {
+@media (max-width: $screen-md) {
     #yEditControlDiv {
         display:none;
     }
     #yPageControlDiv {
         display:none;
-    }
-    .yt_propertylist,
-    .yt_propertylisttabbed {
-        .t_labels {
-            float: none;
-            width:auto;
-        }
-        .t_vals {
-            /*overflow: auto;*/
-            input[type='text'].yt_text80 {
-                width:100%;
-            }
-            .yt_multistring {
-                width:100%;
-                .yt_multistring_text {
-                    margin-right:0;
-                }
-                input[type="text"].t_text80 {
-                    width:100%;
-                }
-            }
-        }
-        .t_labels.t_fillerabove {
-            display:none;
-        }
-        .t_labels.t_fillerbelow {
-            display:none;
-        }
     }
     label {
         color:$base-color;
@@ -270,7 +242,7 @@ label {/* Bold labels are a bit harsh */
 /* SKINSITESELECTOR */
 /* SKINSITESELECTOR */
 
-@media (max-width: $screen-sm) {
+@media (max-width: $screen-md) {
     .skinSiteSelector {
         display:none;
     }
@@ -289,7 +261,7 @@ label {/* Bold labels are a bit harsh */
 /* SKINLOGINSELECTOR */
 /* SKINLOGINSELECTOR */
 
-@media (max-width: $screen-sm) {
+@media (max-width: $screen-md) {
     .skinLoginSelector {
         display:none;
     }
@@ -416,7 +388,7 @@ label {/* Bold labels are a bit harsh */
     right:15px;
     top:40px;
 }
-@media (max-width: $screen-sm) {
+@media (max-width: $screen-md) {
     .YetaWF_Visitors_TinyVisitors {
         display:none;
     }
