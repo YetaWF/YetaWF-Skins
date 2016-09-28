@@ -1,0 +1,123 @@
+﻿@*Copyright © 2016 Softel vdm, Inc. - http://yetawf.com/Documentation/YetaWF/Licensing*@
+@using global::YetaWF.Core.Pages
+@using global::YetaWF.Core.Modules
+@using global::YetaWF.Core.Menus
+@inherits global::YetaWF.Core.Pages.RazorPage
+@{
+    Manager.SetSkinOptions(UsingBootstrap: true, UseDefaultBootstrap: true, UsingBootstrapButtons: true, MinWidthForPopups: 970);
+    //uncomment the following to use Modernizr with your skin (this is not required by the generated skin)
+    //Manager.AddOnManager.AddAddOnGlobal("Modernizr.com", "Modernizr");
+}
+<!DOCTYPE html>
+<html lang="@Manager.CurrentPage.GetPageLanguageId()">
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    [[Manager,-MetatagsHtml]]
+    [[Manager,-PageTitleHtml]]
+    [[PageOrSite,-FavIconLink]]
+    [[ThisPage,-CanonicalUrlLink]]
+    [[ThisPage,-HrefLangHtml]]
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+<body class="@Manager.PageCss("pageSkinDefault")">
+    <noscript><div class="yDivWarning" style="height:100px;text-align:center;vertical-align:middle">This site requires Javascript</div></noscript>
+    @(Html.RenderModule<global::YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
+        m.CssClass = "skinLockedStatus hidden-print";
+    }))
+
+    <div class="brand">Business Casual</div>
+    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+
+    <!-- Page Header -->
+    <div class="container hidden-print">
+        <div class="row">
+            <div class="col-md-12">
+                @(Html.RenderModule<global::YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
+                    m.CssClass = "skinTinyLogin navbar-form navbar-right";
+                }))
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default hidden-print" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".yPageMenu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="/">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            @(Html.RenderModule<global::YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
+                m.Name = "Main Menu Module (Skin)";
+            }))
+        </div>
+    </nav>
+
+    <!-- Panes -->
+    <div class="container">
+        <div class="row main-row">
+            @RenderPane("", "col-md-12 MainPane AnyPane")
+        </div>
+        <div class="row">
+            @RenderPane("PaneSetL2_LeftPane", "col-md-4 PaneSetL2_LeftPane AnyPane", Conditional: false)
+            @RenderPane("PaneSetL2_MainPane", "col-md-8 PaneSetL2_MainPane AnyPane", Conditional: false)
+        </div>
+        <div class="row">
+            @RenderPane("PaneSet3_LeftPane", "col-md-3 PaneSet3_LeftPane AnyPane", Conditional: false)
+            @RenderPane("PaneSet3_MainPane", "col-md-6 PaneSet3_MainPane AnyPane", Conditional: false)
+            @RenderPane("PaneSet3_RightPane", "col-md-3 PaneSet3_RightPane AnyPane", Conditional: false)
+        </div>
+        <div class="row">
+            @RenderPane("PaneSetR2_MainPane", "col-md-8 PaneSetR2_MainPane AnyPane", Conditional: false)
+            @RenderPane("PaneSetR2_RightPane", "col-md-4 PaneSetR2_RightPane AnyPane", Conditional: false)
+        </div>
+    </div>
+    <div class="container">
+        <div class="row footer-row">
+            @RenderPane("Footer", "col-md-12 FooterPane AnyPane")
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>[[PageOrSite,CopyrightEvaluated]]</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @(Html.RenderModule<global::YetaWF.Modules.Sites.Modules.SiteSelectorModule>(m => {
+        m.CssClass = "skinSiteSelector hidden-print";
+    }))
+    @(Html.RenderModule<global::YetaWF.Modules.Identity.Modules.LoginSelectorModule>(m => {
+        m.CssClass = "skinLoginSelector hidden-print";
+    }))
+    @(Html.RenderModule<global::YetaWF.Modules.Search.Modules.SearchControlModule>())
+
+    @(Html.RenderEditControl<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>())
+    @(Html.RenderPageControl<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>())
+
+    @Html.RenderUniqueModuleAddOns()
+
+    <script>
+        /* add hr to module titles - the original skin added these manually to every h1 tag */
+        $(document).ready(function () {
+            $('h1').append('<hr>');
+            $('h1').prepend('<hr>');
+        });
+    </script>
+</body>
+</html>

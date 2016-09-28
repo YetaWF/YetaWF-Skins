@@ -1,0 +1,23 @@
+﻿@*Copyright © 2016 Softel vdm, Inc. - http://yetawf.com/Documentation/YetaWF/Licensing*@
+@using global::YetaWF.Core.Pages
+@using global::YetaWF.Core.Modules
+@inherits global::YetaWF.Core.Pages.RazorPage
+@{
+    Manager.SetSkinOptions(500, 300, false, UsingBootstrap: true, UseDefaultBootstrap: true, UsingBootstrapButtons: true);
+    //uncomment the following to use Modernizr with your skin (this is not required by the generated skin)
+    //Manager.AddOnManager.AddAddOnGlobal("Modernizr.com", "Modernizr");
+}
+<!DOCTYPE html>
+<html lang="@Manager.CurrentPage.GetPageLanguageId()">
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    [[Manager,-MetatagsHtml]]
+    [[Manager,-PageTitleHtml]]
+    [[ThisPage,-HrefLangHtml]]
+</head>
+<body class="@Manager.PageCss("popupSmall")">
+    @RenderPane("", "MainPane AnyPane")
+    @Html.RenderUniqueModuleAddOns()
+</body>
+</html>
