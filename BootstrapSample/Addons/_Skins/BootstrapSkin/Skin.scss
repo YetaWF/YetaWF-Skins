@@ -210,6 +210,19 @@ label {/* Bold labels are a bit harsh */
     margin: .5em 2ch .5em 2ch;
 }
 
+/* PropertyListTabbed (in a popup) - stretch to fill popup - opt-in by module */
+
+.popup {
+    .YetaWF_SiteProperties_SiteProperties,
+    .YetaWF_PageEdit_PageEdit,
+    .YetaWF_ModuleEdit_ModuleEdit {
+        .yt_propertylisttabbed .t_tabpanel {
+            height:580px;
+            overflow:auto;
+        }
+    }
+}
+
 /* PRINTING */
 /* PRINTING */
 /* PRINTING */
