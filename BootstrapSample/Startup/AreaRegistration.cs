@@ -1,4 +1,6 @@
-﻿using YetaWF.Core.Packages;
+﻿/* Copyright © 2017 Softel vdm, Inc. - http://yetawf.com/Documentation/YetaWF/Licensing */
+
+using YetaWF.Core.Packages;
 
 namespace YetaWF.Modules.BootstrapSample.Controllers {
     public class AreaRegistration : YetaWF.Core.Controllers.AreaRegistrationBase {

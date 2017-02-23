@@ -1,4 +1,6 @@
-﻿using YetaWF.Core.Addons;
+﻿/* Copyright © 2017 Softel vdm, Inc. - http://yetawf.com/Documentation/YetaWF/Licensing */
+
+using YetaWF.Core.Addons;
 using YetaWF.Core.Support;
 
 namespace YetaWF.Modules.BootstrapSample.Addons {
