@@ -32,3 +32,4 @@
 !BootstrapSample/Addons/_Skins/BootstrapSkin/css/*.min.scss
 !BootstrapSample/Addons/_Skins/BootstrapSkin/js/*.min.js
 **/project.lock.json
+*.csproj
