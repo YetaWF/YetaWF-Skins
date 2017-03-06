@@ -5,6 +5,9 @@
 *.plg
 *.scss.css
 *.xml
+*.csproj
+packages.config
+app.config
 
 **/obj/
 **/bin/**/*.xml
@@ -31,5 +34,4 @@
 !BootstrapSample/Addons/_Skins/BootstrapSkin/css/*.min.css
 !BootstrapSample/Addons/_Skins/BootstrapSkin/css/*.min.scss
 !BootstrapSample/Addons/_Skins/BootstrapSkin/js/*.min.js
-**/project.lock.json
-*.csproj
+
