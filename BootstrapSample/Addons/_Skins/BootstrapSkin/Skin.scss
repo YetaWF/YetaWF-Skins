@@ -339,6 +339,7 @@ label {/* Bold labels are a bit harsh */
     .t_news {
         border:1px solid silver;
         padding:1em 1ch 1em 1ch;
+        border-radius: 8px 8px;
         .t_header {
             padding-bottom:1em;
             .t_title {
@@ -349,6 +350,7 @@ label {/* Bold labels are a bit harsh */
             border:1px solid silver;
             padding:1em 1ch 1em 1ch;
             margin-bottom:.5em;
+            border-radius: 8px 8px;
             .t_title, .t_text {
                 padding-bottom:.5em;
             }
