@@ -6,7 +6,7 @@ using YetaWF.Core.Packages;
 using YetaWF.PackageAttributes;
 
 [assembly: AssemblyTitle("YetaWFSkin")]
-[assembly: AssemblyDescription("YetaWFSkin description")]
+[assembly: AssemblyDescription("YetaWF skin")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Softel vdm, Inc.")]
 [assembly: AssemblyProduct("YetaWFSkin")]
