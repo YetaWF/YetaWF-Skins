@@ -1,4 +1,4 @@
-﻿/* Copyright © 2017 Softel vdm, Inc. - http://yetawf.com/Documentation/YetaWF/Licensing */
+﻿/* Copyright © 2017 Softel vdm, Inc. - https://yetawf.com/Documentation/YetaWF/Licensing */
 
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -20,8 +20,8 @@ using YetaWF.PackageAttributes;
 [assembly: RequiresAddOnGlobal("getbootstrap.com", "bootstrap-less")]
 
 [assembly: Package(PackageTypeEnum.Skin, "YetaWF")]
-[assembly: PackageInfo("http://YetaWF.com/UpdateServer",
-    "http://yetawf.com/Documentation/YetaWF/BootstrapSample",
-    "http://YetaWF.com/Documentation/YetaWF/Support",
-    "http://yetawf.com/Documentation/YetaWF/BootstrapSample#Release%20Notice",
-    "http://yetawf.com/Documentation/YetaWF/BootstrapSample#License")]
+[assembly: PackageInfo("https://YetaWF.com/UpdateServer",
+    "https://yetawf.com/Documentation/YetaWF/BootstrapSample",
+    "https://YetaWF.com/Documentation/YetaWF/Support",
+    "https://yetawf.com/Documentation/YetaWF/BootstrapSample#Release%20Notice",
+    "https://yetawf.com/Documentation/YetaWF/BootstrapSample#License")]
