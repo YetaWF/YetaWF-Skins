@@ -49,22 +49,22 @@
 
             @RenderPane("Header", "HeaderPane AnyPane")
 
-            @RenderPane("", "MainPane AnyPane")
+            @RenderPane("", "MainPane AnyPane", Unified: true)
 
             @using (PaneSet("PaneSetL2")) {
-                @RenderPane("PaneSetL2_LeftPane", "PaneSetL2_LeftPane AnyPane", Conditional: false)
-                @RenderPane("PaneSetL2_MainPane", "PaneSetL2_MainPane AnyPane", Conditional: false)
+                @RenderPane("PaneSetL2_LeftPane", "PaneSetL2_LeftPane AnyPane", Conditional: false, Unified: true)
+                @RenderPane("PaneSetL2_MainPane", "PaneSetL2_MainPane AnyPane", Conditional: false, Unified: true)
             }
 
             @using (PaneSet("PaneSet3")) {
-                @RenderPane("PaneSet3_LeftPane", "PaneSet3_LeftPane AnyPane", Conditional: false)
-                @RenderPane("PaneSet3_MainPane", "PaneSet3_MainPane AnyPane", Conditional: false)
-                @RenderPane("PaneSet3_RightPane", "PaneSet3_RightPane AnyPane", Conditional: false)
+                @RenderPane("PaneSet3_LeftPane", "PaneSet3_LeftPane AnyPane", Conditional: false, Unified: true)
+                @RenderPane("PaneSet3_MainPane", "PaneSet3_MainPane AnyPane", Conditional: false, Unified: true)
+                @RenderPane("PaneSet3_RightPane", "PaneSet3_RightPane AnyPane", Conditional: false, Unified: true)
             }
 
             @using (PaneSet("PaneSetR2")) {
-                @RenderPane("PaneSetR2_MainPane", "PaneSetR2_MainPane AnyPane", Conditional: false)
-                @RenderPane("PaneSetR2_RightPane", "PaneSetR2_RightPane AnyPane", Conditional: false)
+                @RenderPane("PaneSetR2_MainPane", "PaneSetR2_MainPane AnyPane", Conditional: false, Unified: true)
+                @RenderPane("PaneSetR2_RightPane", "PaneSetR2_RightPane AnyPane", Conditional: false, Unified: true)
             }
 
             @RenderPane("Footer", "FooterPane AnyPane")

@@ -67,20 +67,20 @@
     <!-- Panes -->
     <div class="container">
         <div class="row main-row">
-            @RenderPane("", "col-md-12 MainPane AnyPane")
+            @RenderPane("", "col-md-12 MainPane AnyPane", Unified: true)
         </div>
         <div class="row">
-            @RenderPane("PaneSetL2_LeftPane", "col-md-4 PaneSetL2_LeftPane AnyPane", Conditional: false)
-            @RenderPane("PaneSetL2_MainPane", "col-md-8 PaneSetL2_MainPane AnyPane", Conditional: false)
+            @RenderPane("PaneSetL2_LeftPane", "col-md-4 PaneSetL2_LeftPane AnyPane", Conditional: false, Unified: true)
+            @RenderPane("PaneSetL2_MainPane", "col-md-8 PaneSetL2_MainPane AnyPane", Conditional: false, Unified: true)
         </div>
         <div class="row">
-            @RenderPane("PaneSet3_LeftPane", "col-md-3 PaneSet3_LeftPane AnyPane", Conditional: false)
-            @RenderPane("PaneSet3_MainPane", "col-md-6 PaneSet3_MainPane AnyPane", Conditional: false)
-            @RenderPane("PaneSet3_RightPane", "col-md-3 PaneSet3_RightPane AnyPane", Conditional: false)
+            @RenderPane("PaneSet3_LeftPane", "col-md-3 PaneSet3_LeftPane AnyPane", Conditional: false, Unified: true)
+            @RenderPane("PaneSet3_MainPane", "col-md-6 PaneSet3_MainPane AnyPane", Conditional: false, Unified: true)
+            @RenderPane("PaneSet3_RightPane", "col-md-3 PaneSet3_RightPane AnyPane", Conditional: false, Unified: true)
         </div>
         <div class="row">
-            @RenderPane("PaneSetR2_MainPane", "col-md-8 PaneSetR2_MainPane AnyPane", Conditional: false)
-            @RenderPane("PaneSetR2_RightPane", "col-md-4 PaneSetR2_RightPane AnyPane", Conditional: false)
+            @RenderPane("PaneSetR2_MainPane", "col-md-8 PaneSetR2_MainPane AnyPane", Conditional: false, Unified: true)
+            @RenderPane("PaneSetR2_RightPane", "col-md-4 PaneSetR2_RightPane AnyPane", Conditional: false, Unified: true)
         </div>
     </div>
     <div class="container">
