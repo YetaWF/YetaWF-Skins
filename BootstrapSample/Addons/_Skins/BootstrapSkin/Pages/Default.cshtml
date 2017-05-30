@@ -31,11 +31,11 @@
         <div class="row">
             <div class="col-md-5">
                 @(Html.RenderModule<global::YetaWF.Modules.Text.Modules.TextModule>(new Guid("{AFA55B5E-1CA5-43c7-B9B3-245C172E0819}"), m => {
-                m.Name = "Page Logo (Skin)";
-                m.ShowTitle = false;
-                m.EditOnPage = false;
-                m.CssClass = "skinLogo";
-            }))
+                    m.Name = "Page Logo (Skin)";
+                    m.ShowTitle = false;
+                    m.EditOnPage = false;
+                    m.CssClass = "skinLogo";
+                }))
             </div>
             <div class="col-md-3">
                 @if (Manager.CurrentSite.Localization) {
