@@ -1,6 +1,7 @@
 ﻿Bootstrap Skin (YetaWF.com)
 ::Pages::
-Default::Default.cshtml::Standard page (optional jumbotron, multi-column, footer)::8::16
+Default::Default.cshtml::Standard page (multi-column)::8::16
+Landing Page::Landing.cshtml::Landing page (optional jumbotron, multi-column, footer)::8::16
 Plain::Plain.cshtml::Simple page for just one module::8::16
 ::Popups::
 Popup (Default)::Popup.cshtml::Standard popup window (1000 x 700 pixels)::8::16

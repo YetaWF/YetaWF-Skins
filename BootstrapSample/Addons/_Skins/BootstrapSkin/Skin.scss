@@ -171,12 +171,20 @@ body.pageSkinPlain {
     }
 }
 
-footer {
+.pageSkinLanding footer {
     padding:20px 0 20px 0;
     font-size: $base-fontsize - 3;
     text-align: center;
     background-color: #000;
     color: $base-color;
+}
+
+.pageSkinDefault footer {
+    .row {
+        p {
+            color: $footer-color;
+        }
+    }
 }
 
 /* LABELS AND PROPERTY LISTS */
