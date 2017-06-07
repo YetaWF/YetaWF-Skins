@@ -59,6 +59,7 @@
     <None Include="Addons\_Skins\BootstrapSkin\fonts\glyphicons-halflings-regular.ttf" />
     <None Include="Addons\_Skins\BootstrapSkin\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Addons\_Skins\BootstrapSkin\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Addons\_Skins\BootstrapSkin\Pages\Landing.cshtml" />
     <None Include="Addons\_Skins\BootstrapSkin\Pages\Default.cshtml" />
     <None Include="Addons\_Skins\BootstrapSkin\Pages\Plain.cshtml" />
     <None Include="Addons\_Skins\BootstrapSkin\Popups\PopupMedium.cshtml" />
