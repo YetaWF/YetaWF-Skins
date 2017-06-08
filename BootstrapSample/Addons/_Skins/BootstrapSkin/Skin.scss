@@ -49,12 +49,26 @@ fieldset {
     }
 }
 
-/* Wide Content */
+/* Wide Content - add widecontent to page as Page Css to show the content full width */
 .widecontent {
     .maincontainer  {
         width:100%;
         padding-right: 20px;
     }
+}
+
+/* Landing Page - add LandingPage to page as Page Css to show the contents full width */
+body .jumbotron  {
+    display:none;
+}
+body.LandingPage .jumbotron {
+    display:block;
+}
+body .PaneSetFooter {
+    display:none;
+}
+body.LandingPage .PaneSetFooter {
+    display:block;
 }
 
 /* JQUERY-UI */
@@ -155,7 +169,7 @@ body.pageSkinPlain {
 /* PAGE FOOTER & FOOTER PANE */
 /* PAGE FOOTER & FOOTER PANE */
 
-.PaneSetFooter {
+.PaneSetFooter { /* page footer when LandingPage is used */
     background: $footer-bgcolor;
     background-image: url(Images/footer-bg.jpg);
     background-repeat: repeat-x;
@@ -171,15 +185,7 @@ body.pageSkinPlain {
     }
 }
 
-.pageSkinLanding footer {
-    padding:20px 0 20px 0;
-    font-size: $base-fontsize - 3;
-    text-align: center;
-    background-color: #000;
-    color: $base-color;
-}
-
-.pageSkinDefault footer {
+footer {
     .row {
         p {
             color: $footer-color;

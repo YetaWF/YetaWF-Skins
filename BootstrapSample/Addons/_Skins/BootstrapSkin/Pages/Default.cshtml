@@ -76,26 +76,42 @@
         </div>
     </nav>
 
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                @RenderPane("Header", "col-md-12 HeaderPane AnyPane", Unified: true)
+            </div>
+        </div>
+    </div>
+
     <!-- Panes -->
     <div class="container maincontainer">
         <div class="row">
             @RenderPane("", "col-md-12 MainPane AnyPane", Unified: true)
         </div>
         <div class="row">
-            @RenderPane("PaneSetL2_RightPane", "col-md-4 PaneSetL2_MainPane AnyPane", Conditional: false, Unified: true)
-            @RenderPane("PaneSetL2_MainPane", "col-md-8 PaneSetL2_LeftPane AnyPane", Conditional: false, Unified: true)
+            @RenderPane("PaneSetL2_RightPane", "col-md-4 PaneSetL2_MainPane AnyPane", Unified: true)
+            @RenderPane("PaneSetL2_MainPane", "col-md-8 PaneSetL2_LeftPane AnyPane", Unified: true)
         </div>
         <div class="row">
-            @RenderPane("PaneSet3_LeftPane", "col-md-3 PaneSet3_LeftPane AnyPane", Conditional: false, Unified: true)
-            @RenderPane("PaneSet3_MainPane", "col-md-6 PaneSet3_MainPane AnyPane", Conditional: false, Unified: true)
-            @RenderPane("PaneSet3_RightPane", "col-md-3 PaneSet3_RightPane AnyPane", Conditional: false, Unified: true)
+            @RenderPane("PaneSet3_LeftPane", "col-md-3 PaneSet3_LeftPane AnyPane", Unified: true)
+            @RenderPane("PaneSet3_MainPane", "col-md-6 PaneSet3_MainPane AnyPane", Unified: true)
+            @RenderPane("PaneSet3_RightPane", "col-md-3 PaneSet3_RightPane AnyPane", Unified: true)
         </div>
         <div class="row">
-            @RenderPane("PaneSetR2_MainPane", "col-md-8 PaneSetR2_MainPane AnyPane", Conditional: false, Unified: true)
-            @RenderPane("PaneSetR2_RightPane", "col-md-4 PaneSetR2_RightPane AnyPane", Conditional: false, Unified: true)
+            @RenderPane("PaneSetR2_MainPane", "col-md-8 PaneSetR2_MainPane AnyPane", Unified: true)
+            @RenderPane("PaneSetR2_RightPane", "col-md-4 PaneSetR2_RightPane AnyPane", Unified: true)
         </div>
     </div> <!-- /container -->
 
+    <div class="PaneSetFooter">
+        <div class="container">
+            <div class="row col-md-12">
+                @RenderPane("Footer", "FooterPane AnyPane", Unified: true)
+            </div>
+        </div>
+    </div>
     <footer class="container">
         <hr />
         <div class="row">
