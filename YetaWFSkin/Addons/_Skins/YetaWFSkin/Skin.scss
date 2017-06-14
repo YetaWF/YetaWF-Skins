@@ -379,56 +379,6 @@ label {/* Bold labels are a bit harsh */
         display:none;
     }
 }
-/* Documentation */
-/* Documentation */
-/* Documentation */
-
-body.pageSkinDocX {
-
-    .navbar-nav { /* Header (menu) */
-        li a { font-size: 14px; }
-    }
-    /* override max dropdown width for the dropdowns where the content is too large */
-    .nav > li.dropdown .dropdown-menu {
-        max-width:50ch!important;
-    }
-
-    .MainPane {
-        @media screen {
-            position:fixed;
-            bottom:0px;
-            overflow:scroll;
-        }
-        @media print {
-            position:relative;
-            left: 0px !important;
-            top: 0px !important;
-            width:100% !important;
-        }
-    }
-    #yEditControlDiv, #yPageControlDiv {
-        position:fixed;
-    }
-    #tabToggle {
-        margin-left:2ch;
-    }
-}
-
-.popupShareLink {
-    overflow:hidden;
-    .yt_propertylist {
-        .t_labels {
-            display:none;
-        }
-        .t_vals {
-            overflow: visible;
-            width: 560px;
-            input {
-                width:auto;
-            }
-        }
-    }
-}
 
 /* MEGAMENU */
 /* MEGAMENU */
