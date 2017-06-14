@@ -37,15 +37,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Addons\_Main\filelistJS.txt" />
-    <None Include="Addons\_Main\filelistCSS.txt" />
-    <None Include="Addons\_Main\YetaWFSkin.js" />
-    <None Include="Addons\_Main\YetaWFSkin.css" />
     <None Include="Addons\_Skins\YetaWFSkin\Pages\Default.cshtml" />
-    <None Include="Addons\_Skins\YetaWFSkin\Pages\Documentation.cshtml" />
     <None Include="Addons\_Skins\YetaWFSkin\Pages\Plain.cshtml" />
     <None Include="Addons\_Skins\YetaWFSkin\Popups\PopupMedium.cshtml" />
-    <None Include="Addons\_Skins\YetaWFSkin\Popups\ShareLink.cshtml" />
     <None Include="Addons\_Skins\YetaWFSkin\Popups\PopupSmall.cshtml" />
     <None Include="Addons\_Skins\YetaWFSkin\Popups\Popup.cshtml" />
     <None Include="Addons\_Skins\YetaWFSkin\Skin.scss" />
@@ -92,6 +86,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Addons\_Main\" />
     <Folder Include="Addons\_Skins\YetaWFSkin\Images\" />
   </ItemGroup>
   <PropertyGroup>
