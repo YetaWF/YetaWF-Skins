@@ -66,6 +66,9 @@
 
     <!-- Panes -->
     <div class="container">
+        <div class="row">
+            @RenderPane("Header", "col-md-12 HeaderPane AnyPane", Unified: true)
+        </div>
         <div class="row main-row">
             @RenderPane("", "col-md-12 MainPane AnyPane", Unified: true)
         </div>
@@ -85,7 +88,7 @@
     </div>
     <div class="container">
         <div class="row footer-row">
-            @RenderPane("Footer", "col-md-12 FooterPane AnyPane")
+            @RenderPane("Footer", "col-md-12 FooterPane AnyPane", Unified: true)
         </div>
     </div>
 
@@ -113,10 +116,12 @@
     @Html.RenderUniqueModuleAddOns()
 
     <script>
-        /* add hr to module titles - the original skin added these manually to every h1 tag */
-        $(document).ready(function () {
-            $('h1').append('<hr>');
-            $('h1').prepend('<hr>');
+        YetaWF_Basics.whenReady.push({
+            callback: function ($tag) {    // function to be called
+                /* add hr to module titles - the original skin added these manually to every h1 tag */
+                $('h1', $tag).append('<hr>');
+                $('h1', $tag).prepend('<hr>');
+            }
         });
     </script>
 </body>
