@@ -37,10 +37,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Addons\_Main\filelistJS.txt" />
-    <None Include="Addons\_Main\filelistCSS.txt" />
-    <None Include="Addons\_Main\BusinessCasualSkin.js" />
-    <None Include="Addons\_Main\BusinessCasualSkin.css" />
     <None Include="Addons\_Skins\BusinessCasual\skin.scss" />
     <None Include="Addons\_Skins\BusinessCasual\Pages\Default.cshtml" />
     <None Include="Addons\_Skins\BusinessCasual\Pages\Plain.cshtml" />
@@ -88,6 +84,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Addons\_Main\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
