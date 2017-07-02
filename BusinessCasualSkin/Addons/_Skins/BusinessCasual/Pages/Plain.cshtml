@@ -2,11 +2,6 @@
 @using global::YetaWF.Core.Pages
 @using global::YetaWF.Core.Modules
 @inherits global::YetaWF.Core.Pages.RazorPage
-@{
-    Manager.SetSkinOptions(UsingBootstrap: true, UseDefaultBootstrap: true, UsingBootstrapButtons: true, MinWidthForPopups: 970);
-    //uncomment the following to use Modernizr with your skin (this is not required by the generated skin)
-    //Manager.AddOnManager.AddAddOnGlobal("Modernizr.com", "Modernizr");
-}
 <!DOCTYPE html>
 <html lang="@Manager.CurrentPage.GetPageLanguageId()">
 <head>
@@ -19,7 +14,7 @@
     [[ThisPage,-CanonicalUrlLink]]
     [[ThisPage,-HrefLangHtml]]
 </head>
-<body class="@Manager.PageCss("pageSkinPlain")">
+<body class="@Manager.PageCss()">
     <noscript><div class="yDivWarning" style="height:100px;text-align:center;vertical-align:middle">This site requires Javascript</div></noscript>
     @(Html.RenderEditControl<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>())
     @(Html.RenderPageControl<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>())

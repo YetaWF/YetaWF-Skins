@@ -58,16 +58,16 @@ fieldset {
 }
 
 /* Landing Page - add LandingPage to page as Page Css to show the jumbotron */
-body .jumbotron  {
+.jumbotron  {
     display:none;
 }
-body.LandingPage .jumbotron {
+.LandingPage .jumbotron {
     display:block;
 }
-body .PaneSetFooter {
+.PaneSetFooter {
     display:none;
 }
-body.LandingPage .PaneSetFooter {
+.LandingPage .PaneSetFooter {
     display:block;
 }
 
@@ -125,7 +125,7 @@ body.LandingPage .PaneSetFooter {
 /* PLAIN PAGE SKIN */
 /* PLAIN PAGE SKIN */
 
-body.pageSkinPlain {
+.pageSkinPlain {
     margin: .5ch;
 }
 
@@ -153,7 +153,10 @@ body.pageSkinPlain {
 /* MODULES */
 /* MODULES */
 
-.AnyPane .yModule {
+.yPage .yPane.yModule {
+    padding-bottom:15px;
+}
+.yPopupDyn .yModule {
     padding-bottom:15px;
 }
 
@@ -201,6 +204,10 @@ label {/* Bold labels are a bit harsh */
     font-weight:normal;
     margin-bottom:0;
 }
+.yCondense label {
+    color:$base-color;
+    font-weight:bold;
+}
 
 /* Small screens */
 
@@ -221,18 +228,29 @@ label {/* Bold labels are a bit harsh */
 /* POPUP */
 /* POPUP */
 
-.yPopup {
-    margin: .5em 2ch .5em 2ch;
+.yPopup,
+div.k-window-content.yPopupDyn {
+    padding:1em 2ch 1em 2ch;
 }
 
 /* PropertyListTabbed (in a popup) - stretch to fill popup - opt-in by module */
-
 .popup {
     .YetaWF_SiteProperties_SiteProperties,
     .YetaWF_PageEdit_PageEdit,
     .YetaWF_ModuleEdit_ModuleEdit {
         .yt_propertylisttabbed .t_tabpanel {
-            height:580px;
+            height:585px;
+            overflow:auto;
+        }
+    }
+}
+/* PropertyListTabbed (in a dynamic popup) - stretch to fill popup - opt-in by module */
+.popup.yPopupDyn {
+    .YetaWF_SiteProperties_SiteProperties,
+    .YetaWF_PageEdit_PageEdit,
+    .YetaWF_ModuleEdit_ModuleEdit {
+        .yt_propertylisttabbed .t_tabpanel {
+            height:560px;
             overflow:auto;
         }
     }
@@ -260,7 +278,7 @@ label {/* Bold labels are a bit harsh */
     }
 }
 @media screen {
-    body.yDisplayMode .yPrintOnly
+    .yDisplayMode .yPrintOnly
     {
         display: none;
     }

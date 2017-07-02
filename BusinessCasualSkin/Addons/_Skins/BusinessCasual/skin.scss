@@ -259,6 +259,10 @@ fieldset {
 label {/* Bold labels are a bit harsh */
     font-weight:500;
 }
+.yCondense label {
+    color:$base-color;
+    font-weight:bold;
+}
 
 /* Small screens */
 
@@ -269,18 +273,15 @@ label {/* Bold labels are a bit harsh */
     #yPageControlDiv {
         display:none;
     }
-    label {
-        color:$base-color;
-        font-weight:bold;
-    }
 }
 
 /* POPUP */
 /* POPUP */
 /* POPUP */
 
-.yPopup {
-    margin: .5em 2ch .5em 2ch;
+.yPopup,
+div.k-window-content.yPopupDyn {
+    padding:1em 2ch 1em 2ch;
 }
 
 /* PRINTING */

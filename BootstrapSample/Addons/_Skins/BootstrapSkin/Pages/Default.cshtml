@@ -3,11 +3,6 @@
 @using global::YetaWF.Core.Modules
 @using global::YetaWF.Core.Menus
 @inherits global::YetaWF.Core.Pages.RazorPage
-@{
-    Manager.SetSkinOptions(UsingBootstrap: true, UseDefaultBootstrap: false, UsingBootstrapButtons:true, MinWidthForPopups: 970);
-    //uncomment the following to use Modernizr with your skin (this is not required by the skin)
-    //Manager.AddOnManager.AddAddOnGlobal("Modernizr.com", "Modernizr");
-}
 <!DOCTYPE html>
 <html lang="@Manager.CurrentPage.GetPageLanguageId()">
 <head>
@@ -20,7 +15,7 @@
     [[ThisPage,-CanonicalUrlLink]]
     [[ThisPage,-HrefLangHtml]]
 </head>
-<body class="@Manager.PageCss("pageSkinDefault")">
+<body class="@Manager.PageCss()">
     <noscript><div class="yDivWarning" style="height:100px;text-align:center;vertical-align:middle">This site requires Javascript</div></noscript>
     @(Html.RenderModule<global::YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
         m.CssClass = "skinLockedStatus hidden-print";

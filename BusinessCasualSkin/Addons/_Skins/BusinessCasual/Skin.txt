@@ -1,10 +1,16 @@
 ﻿BusinessCasual Skin (YetaWF.com)
+JQuerySkin
+KendoSkin
+UsingBootstrap true
+UseDefaultBootstrap true
+UsingBootstrapButtons true
+MinWidthForPopups 970
 ::Pages::
-Default::Default.cshtml::Standard page::9::23
-Plain::Plain.cshtml::Simple page for just one module::9::23
+Default;Default.cshtml;Standard page;pageSkinDefault;9;23
+Plain;Plain.cshtml;Simple page for just one module;pageSkinPlain;9;23
 ::Popups::
-Popup (Default)::Popup.cshtml::Standard popup window (1000 x 700 pixels)::9::23
-Medium Popup::PopupMedium.cshtml::Medium popup window (700 x 500 pixels)::9::23
-Small Popup::PopupSmall.cshtml::Small popup window (500 x 300 pixels)::9::23
+Popup (Default);Popup.cshtml;Standard popup window;popup;1000;700;0;9;23
+Medium Popup;PopupMedium.cshtml;Medium popup window;popupMedium;700;500;0;9;23
+Small Popup;PopupSmall.cshtml;Small popup window;popupSmall;500;300;0;9;23
 ::Modules::
-Standard (Default)::modStandard::Standard module::9::23
+Standard (Default);modStandard;Standard module;9;23
