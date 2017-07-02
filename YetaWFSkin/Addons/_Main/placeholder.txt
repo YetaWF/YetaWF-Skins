@@ -1,1 +1,0 @@
-﻿Placeholder file so the _Main folder is preserved when empty
