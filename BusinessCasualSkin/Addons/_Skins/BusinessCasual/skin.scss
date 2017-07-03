@@ -76,7 +76,7 @@ hr {
     padding-right:15px;
 }
 
-.pageSkinDefault .yPane .yModule.modStandard {
+.pageSkinDefault .yPane.AnyPane .yModule.modStandard {
     margin-bottom: 20px;
     padding: 30px 15px;
     background: #fff;
@@ -282,6 +282,9 @@ label {/* Bold labels are a bit harsh */
 .yPopup,
 div.k-window-content.yPopupDyn {
     padding:1em 2ch 1em 2ch;
+    .yModule.modStandard {
+        padding-bottom: 15px;
+    }
 }
 
 /* PRINTING */
