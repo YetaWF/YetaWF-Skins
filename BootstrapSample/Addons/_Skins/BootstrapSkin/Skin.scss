@@ -261,29 +261,11 @@ div.k-window-content.yPopupDyn {
 /* PRINTING */
 
 @media print {
-    #yEditControlDiv,
-    #yPageControlDiv,
-    .yt_moduleactions,
-    .yModuleLinksContainer,
-    .yNoPrint,
-    form.yform-ajax .t_detailsbuttons,
-    .cke .cke_top
-    {
-        display: none;
-    }
-
     /* Don't print href value for links - (Why would you, Bootstrap?) */
     a[href]:after {
         content: none !important;
     }
 }
-@media screen {
-    .yDisplayMode .yPrintOnly
-    {
-        display: none;
-    }
-}
-
 /* SKINSITESELECTOR */
 /* SKINSITESELECTOR */
 /* SKINSITESELECTOR */
