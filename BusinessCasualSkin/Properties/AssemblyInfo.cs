@@ -17,8 +17,6 @@ using YetaWF.PackageAttributes;
 
 [assembly: AssemblyVersion("2.5.1.0")]
 
-[assembly: RequiresAddOnGlobal("getbootstrap.com", "bootstrap-less")]
-
 [assembly: Package(PackageTypeEnum.Skin, "YetaWF")]
 [assembly: PackageInfo("https://YetaWF.com/UpdateServer",
     "https://yetawf.com/Documentation/YetaWF/BusinessCasualSkin",
