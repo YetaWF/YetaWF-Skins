@@ -4,8 +4,8 @@
     <VersionPrefix>2.0.0</VersionPrefix>
     <TargetFramework>net462</TargetFramework>
     <DefineConstants>$(DefineConstants);MVC6</DefineConstants>
-    <AssemblyName>YetaWF.BusinessCasualSkin</AssemblyName>
-    <PackageId>BusinessCasualSkin</PackageId>
+    <AssemblyName>YetaWF.SimpleSkin</AssemblyName>
+    <PackageId>SimpleSkin</PackageId>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -13,7 +13,7 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <RootNamespace>YetaWF.Modules.BusinessCasualSkin</RootNamespace>
+    <RootNamespace>YetaWF.Modules.SampleSkin</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
