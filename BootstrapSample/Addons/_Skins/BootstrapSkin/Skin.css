@@ -1,0 +1,330 @@
+@charset "UTF-8";
+/* Copyright © 2017 Softel vdm, Inc. - https://yetawf.com/Documentation/YetaWF/Licensing */
+/* GLOBALS */
+/* GLOBALS */
+/* GLOBALS */
+body {
+  font-family: "Pontano Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #666; }
+
+.jumbotron h1, .jumbotron .h1 {
+  font-size: 35px; }
+
+h1, .h1 {
+  font-size: 30px; }
+
+h2, .h2 {
+  font-size: 24px; }
+
+h3, .h3 {
+  font-size: 20px; }
+
+h4, .h4 {
+  font-size: 18px; }
+
+h5, .h5 {
+  font-size: 16px; }
+
+fieldset {
+  padding: .5ch .5em .5ch .5em;
+  margin: 0;
+  border: 1px solid silver; }
+  fieldset legend {
+    margin-bottom: .5em;
+    font-size: 14px;
+    width: auto;
+    border: 0; }
+
+/* Wide Content - add widecontent to page as Page Css to show the content full width */
+.widecontent .maincontainer {
+  width: 100%;
+  padding-right: 20px; }
+
+/* Landing Page - add LandingPage to page as Page Css to show the jumbotron */
+.jumbotron {
+  display: none; }
+
+.LandingPage .jumbotron {
+  display: block; }
+
+.PaneSetFooter {
+  display: none; }
+
+.LandingPage .PaneSetFooter {
+  display: block; }
+
+/* JQUERY-UI */
+/* JQUERY-UI */
+/* JQUERY-UI */
+.ui-widget,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  /* Override jquery-ui font to restore ours */
+  font-family: "Pontano Sans", Arial, Helvetica, sans-serif;
+  font-size: 100%; }
+
+/* OWNERSHIP */
+/* OWNERSHIP */
+/* OWNERSHIP */
+.ypagerole_noUserAnon {
+  background-color: aliceblue !important; }
+
+.ypagerole_noAnon {
+  background-color: antiquewhite !important; }
+
+.ypagerole_noUser {
+  background-color: blanchedalmond !important; }
+
+.ymodrole_noUserAnon {
+  background-color: aliceblue !important;
+  padding: 5px; }
+
+.ymodrole_noAnon {
+  background-color: antiquewhite !important;
+  padding: 5px; }
+
+.ymodrole_noUser {
+  background-color: blanchedalmond !important;
+  padding: 5px; }
+
+/* PANE IN EDIT MODE */
+/* PANE IN EDIT MODE */
+/* PANE IN EDIT MODE */
+.yPage.yEditMode .AnyPane {
+  padding: 15px 15px 15px 15px;
+  background: #fff;
+  border: 1px solid #e4e3e3;
+  border-radius: 3px; }
+
+/* PLAIN PAGE SKIN */
+/* PLAIN PAGE SKIN */
+/* PLAIN PAGE SKIN */
+.pageSkinPlain {
+  margin: .5ch; }
+
+/* PAGE/MODULE EDIT CONTROL */
+/* PAGE/MODULE EDIT CONTROL */
+/* PAGE/MODULE EDIT CONTROL */
+#yEditControlDiv {
+  top: 10px;
+  right: 5ch; }
+
+#yPageControlDiv {
+  top: 50px;
+  right: 5ch; }
+
+.relocateControls #yEditControlDiv {
+  top: 220px; }
+
+.relocateControls #yPageControlDiv {
+  top: 260px; }
+
+/* MODULES */
+/* MODULES */
+/* MODULES */
+.yPage .yPane.yModule {
+  padding-bottom: 15px; }
+
+.yPopupDyn .yModule {
+  padding-bottom: 15px; }
+
+/* ACTIONS GAP BETWEEN IMAGE AND TEXT  */
+/* ACTIONS GAP BETWEEN IMAGE AND TEXT  */
+/* ACTIONS GAP BETWEEN IMAGE AND TEXT  */
+.y_act_textimg img {
+  margin-right: .5ch; }
+
+/* PAGE FOOTER & FOOTER PANE */
+/* PAGE FOOTER & FOOTER PANE */
+/* PAGE FOOTER & FOOTER PANE */
+.PaneSetFooter {
+  /* page footer when LandingPage is used */
+  background: #222;
+  background-image: url(Images/footer-bg.jpg);
+  background-repeat: repeat-x;
+  color: #aaa; }
+  .PaneSetFooter .FooterPane {
+    background: #222; }
+  .PaneSetFooter .FooterPane .modStandard {
+    margin-bottom: 0; }
+  .PaneSetFooter h1, .PaneSetFooter .h1 {
+    font-size: 20px; }
+
+footer .row p {
+  color: #aaa; }
+
+/* LABELS AND PROPERTY LISTS */
+/* LABELS AND PROPERTY LISTS */
+/* LABELS AND PROPERTY LISTS */
+label {
+  /* Bold labels are a bit harsh */
+  font-weight: normal;
+  margin-bottom: 0; }
+
+.yCondense label {
+  color: #666;
+  font-weight: bold; }
+
+/* Small screens */
+@media (max-width: 992px) {
+  #yEditControlDiv {
+    display: none; }
+  #yPageControlDiv {
+    display: none; }
+  label {
+    color: #666;
+    font-weight: bold; } }
+
+/* POPUP */
+/* POPUP */
+/* POPUP */
+.yPopup,
+div.k-window-content.yPopupDyn {
+  padding: 1em 2ch 1em 2ch; }
+
+/* PropertyListTabbed (in a popup) - stretch to fill popup - opt-in by module */
+.popup .YetaWF_SiteProperties_SiteProperties .yt_propertylisttabbed .t_tabpanel,
+.popup .YetaWF_PageEdit_PageEdit .yt_propertylisttabbed .t_tabpanel,
+.popup .YetaWF_ModuleEdit_ModuleEdit .yt_propertylisttabbed .t_tabpanel {
+  height: 585px;
+  overflow: auto; }
+
+/* PropertyListTabbed (in a dynamic popup) - stretch to fill popup - opt-in by module */
+.popup.yPopupDyn .YetaWF_SiteProperties_SiteProperties .yt_propertylisttabbed .t_tabpanel,
+.popup.yPopupDyn .YetaWF_PageEdit_PageEdit .yt_propertylisttabbed .t_tabpanel,
+.popup.yPopupDyn .YetaWF_ModuleEdit_ModuleEdit .yt_propertylisttabbed .t_tabpanel {
+  height: 560px;
+  overflow: auto; }
+
+/* PRINTING */
+/* PRINTING */
+/* PRINTING */
+@media print {
+  /* Don't print href value for links - (Why would you, Bootstrap?) */
+  a[href]:after {
+    content: none !important; } }
+
+/* SKINSITESELECTOR */
+/* SKINSITESELECTOR */
+/* SKINSITESELECTOR */
+@media (max-width: 992px) {
+  .skinSiteSelector {
+    display: none; } }
+
+.skinSiteSelector.modStandard {
+  position: absolute;
+  left: 1ch;
+  top: 20px;
+  z-index: 1501;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  padding: 5px; }
+
+/* SKINLOGINSELECTOR */
+/* SKINLOGINSELECTOR */
+/* SKINLOGINSELECTOR */
+@media (max-width: 992px) {
+  .skinLoginSelector {
+    display: none; } }
+
+.skinLoginSelector.modStandard {
+  position: absolute;
+  left: 1ch;
+  top: 70px;
+  z-index: 1500;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  padding: 5px; }
+
+/* TINYLOGIN MODULE COSMETICS */
+/* TINYLOGIN MODULE COSMETICS */
+/* TINYLOGIN MODULE COSMETICS */
+.skinTinyLogin div.t_haveuser,
+.skinTinyLogin div.t_nouser {
+  display: inline-block; }
+
+.skinTinyLogin div.t_haveuser.t_link,
+.skinTinyLogin div.t_nouser.t_logon {
+  padding-right: 1ch; }
+
+/* SEARCHINPUT MODULE COSMETICS */
+/* SEARCHINPUT MODULE COSMETICS */
+/* SEARCHINPUT MODULE COSMETICS */
+.skinSearchInput.navbar-form.navbar-right {
+  margin-right: -15px;
+  /*we have two modules in the same column*/ }
+
+.skinSearchInput .t_searchterms .t_labels {
+  display: none; }
+
+.skinSearchInput .t_searchterms .t_vals input {
+  width: 15ch; }
+
+.skinSearchInput .yform-ajax .t_detailsbuttons input {
+  margin-left: .5ch;
+  margin-right: 0px; }
+
+.skinSearchInput .yform-partial,
+.skinSearchInput .yform-partial div,
+.skinSearchInput .t_detailsbuttons {
+  display: inline; }
+
+/* NEWS FEED */
+/* NEWS FEED */
+/* NEWS FEED */
+.YetaWF_Feed_Feed .t_news {
+  border: 1px solid silver;
+  padding: 1em 1ch 1em 1ch;
+  border-radius: 8px 8px; }
+  .YetaWF_Feed_Feed .t_news .t_header {
+    padding-bottom: 1em; }
+    .YetaWF_Feed_Feed .t_news .t_header .t_title {
+      font-size: 18px; }
+  .YetaWF_Feed_Feed .t_news .t_headerentry {
+    border: 1px solid silver;
+    padding: 1em 1ch 1em 1ch;
+    margin-bottom: .5em;
+    border-radius: 8px 8px; }
+    .YetaWF_Feed_Feed .t_news .t_headerentry .t_title, .YetaWF_Feed_Feed .t_news .t_headerentry .t_text {
+      padding-bottom: .5em; }
+    .YetaWF_Feed_Feed .t_news .t_headerentry .t_date {
+      font-size: 12px; }
+  .YetaWF_Feed_Feed .t_news .t_entry {
+    padding-top: .2em;
+    padding-bottom: .2em; }
+
+/* MENU EDIT */
+/* MENU EDIT */
+/* MENU EDIT */
+.YetaWF_Menus_MenuEdit .t_view {
+  float: left;
+  margin-right: 3ch; }
+  .YetaWF_Menus_MenuEdit .t_view .t_treeview {
+    width: 40ch;
+    height: 50em; }
+
+.YetaWF_Menus_MenuEdit .t_details {
+  float: left;
+  font-size: smaller; }
+
+/* SEARCH CONTROL MODULE */
+/* SEARCH CONTROL MODULE */
+/* SEARCH CONTROL MODULE */
+.skinSearchControl.yModule.YetaWF_Search_SearchControl {
+  right: 5ch;
+  top: 14em; }
+
+/* TINY VISITORS MODULE */
+/* TINY VISITORS MODULE */
+/* TINY VISITORS MODULE */
+.YetaWF_Visitors_TinyVisitors {
+  position: absolute;
+  right: 15px;
+  top: 40px; }
+
+@media (max-width: 992px) {
+  .YetaWF_Visitors_TinyVisitors {
+    display: none; } }
