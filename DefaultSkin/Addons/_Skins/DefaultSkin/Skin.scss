@@ -1,41 +1,11 @@
 ﻿/* Copyright © 2017 Softel vdm, Inc. - https://yetawf.com/Documentation/YetaWF/Licensing */
 
-$base-font: 'Pontano Sans', Arial, Helvetica, sans-serif;
-$base-fontsize: 14px;
-$base-color: #666;
-
-$footer-bgcolor:#222;
-$footer-color:#aaa;
-
 $screen-md : 992px;
+$base-fontsize: 14px;
 
 /* GLOBALS */
 /* GLOBALS */
 /* GLOBALS */
-
-body {
-    font-family: $base-font;
-    font-size: $base-fontsize;
-    color: $base-color;
-}
-.jumbotron h1, .jumbotron .h1 {
-    font-size: 35px;
-}
-h1,.h1 {
-    font-size:30px;
-}
-h2,.h2 {
-    font-size:24px;
-}
-h3,.h3 {
-    font-size:20px;
-}
-h4,.h4 {
-    font-size:18px;
-}
-h5,.h5 {
-    font-size:16px;
-}
 
 fieldset {
     padding:.5ch .5em .5ch .5em;
@@ -43,7 +13,6 @@ fieldset {
     border:1px solid silver;
     legend {
         margin-bottom: .5em;
-        font-size:$base-fontsize;
         width:auto;
         border:0;
     }
@@ -80,7 +49,6 @@ fieldset {
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {/* Override jquery-ui font to restore ours */
-    font-family: $base-font;
     font-size: 100%;
 }
 
@@ -110,17 +78,6 @@ fieldset {
     padding:5px;
 }
 
-/* PANE IN EDIT MODE */
-/* PANE IN EDIT MODE */
-/* PANE IN EDIT MODE */
-
-.yPage.yEditMode .AnyPane {
-    padding: 15px 15px 15px 15px;
-    background:#fff;
-    border:1px solid #e4e3e3;
-    border-radius:3px;
-}
-
 /* PLAIN PAGE SKIN */
 /* PLAIN PAGE SKIN */
 /* PLAIN PAGE SKIN */
@@ -129,24 +86,27 @@ fieldset {
     margin: .5ch;
 }
 
+/* PANE IN EDIT MODE */
+/* PANE IN EDIT MODE */
+/* PANE IN EDIT MODE */
+
+.yPage.yEditMode .AnyPane {
+    padding: 15px 15px 15px 15px;
+    border:1px solid #e4e3e3;
+    border-radius:3px;
+}
+
 /* PAGE/MODULE EDIT CONTROL */
 /* PAGE/MODULE EDIT CONTROL */
 /* PAGE/MODULE EDIT CONTROL */
 
 #yEditControlDiv {
     top:10px;
-    right:5ch;
+    right:3ch;
 }
 #yPageControlDiv {
-    top:50px;
-    right:5ch;
-}
-
-.relocateControls #yEditControlDiv {
-    top:220px;
-}
-.relocateControls #yPageControlDiv {
-    top:260px;
+    top:60px;
+    right:3ch;
 }
 
 /* MODULES */
@@ -172,28 +132,9 @@ fieldset {
 /* PAGE FOOTER & FOOTER PANE */
 /* PAGE FOOTER & FOOTER PANE */
 
-.PaneSetFooter { /* page footer when LandingPage is used */
-    background: $footer-bgcolor;
-    background-image: url(Images/footer-bg.jpg);
-    background-repeat: repeat-x;
-    color: $footer-color;
-    .FooterPane {
-        background: $footer-bgcolor;
-    }
-    .FooterPane .modStandard {
-        margin-bottom:0;
-    }
-    h1, .h1 {
-        font-size:20px
-    }
-}
-
 footer {
-    .row {
-        p {
-            color: $footer-color;
-        }
-    }
+    padding:20px 0 20px 0;
+    text-align: center;
 }
 
 /* LABELS AND PROPERTY LISTS */
@@ -202,10 +143,8 @@ footer {
 
 label {/* Bold labels are a bit harsh */
     font-weight:normal;
-    margin-bottom:0;
 }
 .yCondense label {
-    color:$base-color;
     font-weight:bold;
 }
 
@@ -219,7 +158,6 @@ label {/* Bold labels are a bit harsh */
         display:none;
     }
     label {
-        color:$base-color;
         font-weight:bold;
     }
 }
@@ -231,29 +169,6 @@ label {/* Bold labels are a bit harsh */
 .yPopup,
 div.k-window-content.yPopupDyn {
     padding:1em 2ch 1em 2ch;
-}
-
-/* PropertyListTabbed (in a popup) - stretch to fill popup - opt-in by module */
-.popup {
-    .YetaWF_SiteProperties_SiteProperties,
-    .YetaWF_PageEdit_PageEdit,
-    .YetaWF_ModuleEdit_ModuleEdit {
-        .yt_propertylisttabbed .t_tabpanel {
-            height:585px;
-            overflow:auto;
-        }
-    }
-}
-/* PropertyListTabbed (in a dynamic popup) - stretch to fill popup - opt-in by module */
-.popup.yPopupDyn {
-    .YetaWF_SiteProperties_SiteProperties,
-    .YetaWF_PageEdit_PageEdit,
-    .YetaWF_ModuleEdit_ModuleEdit {
-        .yt_propertylisttabbed .t_tabpanel {
-            height:560px;
-            overflow:auto;
-        }
-    }
 }
 
 /* PRINTING */
@@ -298,7 +213,7 @@ div.k-window-content.yPopupDyn {
 .skinLoginSelector.modStandard {
     position:absolute;
     left:1ch;
-    top:70px;
+    top:80px;
     z-index:1500;
     border-radius:5px;
     color:black;
@@ -336,7 +251,6 @@ div.k-window-content.yPopupDyn {
         width: 15ch;
     }
     .yform-ajax .t_detailsbuttons input {
-        margin-left:.5ch;
         margin-right:0px;
     }
 }
@@ -354,8 +268,8 @@ div.k-window-content.yPopupDyn {
 .YetaWF_Feed_Feed {
     .t_news {
         border:1px solid silver;
+        border-radius:5px;
         padding:1em 1ch 1em 1ch;
-        border-radius: 8px 8px;
         .t_header {
             padding-bottom:1em;
             .t_title {
@@ -364,9 +278,9 @@ div.k-window-content.yPopupDyn {
         }
         .t_headerentry {
             border:1px solid silver;
+            border-radius:5px;
             padding:1em 1ch 1em 1ch;
             margin-bottom:.5em;
-            border-radius: 8px 8px;
             .t_title, .t_text {
                 padding-bottom:.5em;
             }
@@ -378,49 +292,5 @@ div.k-window-content.yPopupDyn {
             padding-top:.2em;
             padding-bottom:.2em;
         }
-    }
-}
-
-
-/* MENU EDIT */
-/* MENU EDIT */
-/* MENU EDIT */
-
-.YetaWF_Menus_MenuEdit {
-    .t_view {
-        float:left;
-        margin-right:3ch;
-        .t_treeview {
-            width:40ch;
-            height:50em;
-        }
-    }
-    .t_details {
-        float:left;
-        font-size:smaller;
-    }
-}
-
-/* SEARCH CONTROL MODULE */
-/* SEARCH CONTROL MODULE */
-/* SEARCH CONTROL MODULE */
-
-.skinSearchControl.yModule.YetaWF_Search_SearchControl  {
-    right: 5ch;
-    top: 14em;
-}
-
-/* TINY VISITORS MODULE */
-/* TINY VISITORS MODULE */
-/* TINY VISITORS MODULE */
-
-.YetaWF_Visitors_TinyVisitors {
-    position:absolute;
-    right:15px;
-    top:40px;
-}
-@media (max-width: $screen-md) {
-    .YetaWF_Visitors_TinyVisitors {
-        display:none;
     }
 }

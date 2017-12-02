@@ -1,10 +1,10 @@
-﻿Bootstrap Skin (YetaWF.com)
+Default Skin - uses Site Settings (Softel vdm, Inc.)
 JQuerySkin
 KendoSkin
 UsingBootstrap true
-UseDefaultBootstrap false
+UseDefaultBootstrap true
 UsingBootstrapButtons true
-PartialFormCss false
+PartialFormCss well
 MinWidthForPopups 970
 ::Pages::
 Default;Default.cshtml;Standard page (optional jumbotron, multi-column, footer);pageSkinDefault;8;16
@@ -12,6 +12,6 @@ Plain;Plain.cshtml;Simple page for just one module;pageSkinPlain;8;16
 ::Popups::
 Popup (Default);Popup.cshtml;Standard popup window;popup;1000;700;0;8;16
 Medium Popup;PopupMedium.cshtml;Medium popup window;popupMedium;700;500;0;8;16
-Small Popup;PopupSmall.cshtml;Small popup window;popupSmall;500;450;0;8;16
+Small Popup;PopupSmall.cshtml;Small popup window;popupSmall;500;300;0;8;16
 ::Modules::
 Standard (Default);modStandard;Standard module;8;16
