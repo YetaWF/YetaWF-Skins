@@ -7,6 +7,11 @@ $base-fontsize: 14px;
 /* GLOBALS */
 /* GLOBALS */
 
+select.t_native {
+    color: #000;
+    background-color:#FFF;
+}
+
 fieldset {
     padding:.5ch .5em .5ch .5em;
     margin:0;
@@ -259,6 +264,26 @@ div.k-window-content.yPopupDyn {
 .skinSearchInput .yform-partial div,
 .skinSearchInput .t_detailsbuttons {
     display:inline;
+}
+
+/* MENU EDIT */
+/* MENU EDIT */
+/* MENU EDIT */
+
+.YetaWF_Menus_MenuEdit {
+    .t_view {
+        float:left;
+        margin-right:5ch;
+        .t_treeview {
+            width:50ch;
+            height:50em;
+        }
+    }
+    .t_details {
+        width:1000px;
+        float:left;
+        font-size:smaller;
+    }
 }
 
 /* NEWS FEED */

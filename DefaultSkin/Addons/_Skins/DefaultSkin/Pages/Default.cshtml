@@ -44,11 +44,11 @@
                 @(Html.RenderModule<global::YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
                     m.CssClass = "skinTinyLogin navbar-form navbar-right";
                 }))
-                @(Html.RenderModule<global::YetaWF.Modules.Search.Modules.SearchInputModule>(new Guid("{B6EB73A4-0316-46f1-831B-0993CD280F61}"), m => {
+                @*@(Html.RenderModule<global::YetaWF.Modules.Search.Modules.SearchInputModule>(new Guid("{B6EB73A4-0316-46f1-831B-0993CD280F61}"), m => {
                     m.ShowTitle = false;
                     m.Name = "Search Input (Skin)";
                     m.CssClass = "skinSearchInput navbar-form navbar-right";
-                }))
+                }))*@
             </div>
         </div>
     </div>
@@ -80,7 +80,7 @@
     </div>
 
     <!-- Panes -->
-    <div class="container">
+    <div class="container maincontainer">
         <div class="row">
             @RenderPane("", "col-md-12 MainPane AnyPane", Unified: true)
         </div>
