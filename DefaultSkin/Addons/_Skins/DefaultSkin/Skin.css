@@ -221,13 +221,12 @@ div.k-window-content.yPopupDyn {
 /* MENU EDIT */
 .YetaWF_Menus_MenuEdit .t_view {
   float: left;
-  margin-right: 5ch; }
+  margin-right: 3ch; }
   .YetaWF_Menus_MenuEdit .t_view .t_treeview {
-    width: 50ch;
+    width: 40ch;
     height: 50em; }
 
 .YetaWF_Menus_MenuEdit .t_details {
-  width: 1000px;
   float: left;
   font-size: smaller; }
 
