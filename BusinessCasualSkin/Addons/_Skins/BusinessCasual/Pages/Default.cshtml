@@ -97,12 +97,6 @@
         </div>
     </footer>
 
-    @(Html.RenderModule<global::YetaWF.Modules.Sites.Modules.SiteSelectorModule>(m => {
-        m.CssClass = "skinSiteSelector hidden-print";
-    }))
-    @(Html.RenderModule<global::YetaWF.Modules.Identity.Modules.LoginSelectorModule>(m => {
-        m.CssClass = "skinLoginSelector hidden-print";
-    }))
     @(Html.RenderModule<global::YetaWF.Modules.Search.Modules.SearchControlModule>())
 
     @(Html.RenderEditControl<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>())

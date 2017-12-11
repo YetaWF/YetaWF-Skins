@@ -271,45 +271,6 @@ div.k-window-content.yPopupDyn {
         content: none !important;
     }
 }
-/* SKINSITESELECTOR */
-/* SKINSITESELECTOR */
-/* SKINSITESELECTOR */
-
-@media (max-width: $screen-md) {
-    .skinSiteSelector {
-        display:none;
-    }
-}
-.skinSiteSelector.modStandard {
-    position:absolute;
-    left:1ch;
-    top:20px;
-    z-index:1501;
-    border-radius:5px;
-    color:black;
-    background-color:antiquewhite;
-    padding:5px;
-}
-
-/* SKINLOGINSELECTOR */
-/* SKINLOGINSELECTOR */
-/* SKINLOGINSELECTOR */
-
-@media (max-width: $screen-md) {
-    .skinLoginSelector {
-        display:none;
-    }
-}
-.skinLoginSelector.modStandard {
-    position:absolute;
-    left:1ch;
-    top:70px;
-    z-index:1500;
-    border-radius:5px;
-    color:black;
-    background-color:antiquewhite;
-    padding:5px;
-}
 
 /* TINYLOGIN MODULE COSMETICS */
 /* TINYLOGIN MODULE COSMETICS */
