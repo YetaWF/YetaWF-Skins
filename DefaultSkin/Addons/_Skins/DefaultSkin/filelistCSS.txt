@@ -1,1 +1,2 @@
 ﻿skin.scss
+themes\{BootstrapSkin}\skin.scss
