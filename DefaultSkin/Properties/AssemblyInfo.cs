@@ -17,9 +17,9 @@ using YetaWF.PackageAttributes;
 
 [assembly: AssemblyVersion("2.7.0.0")]
 
-[assembly: Package(PackageTypeEnum.Module, "YetaWF")]
-[assembly: PackageInfo("http://softelvdm.com/UpdateServer",
-    "http://softelvdm.com/Documentation/YetaWF/DefaultSkin",
-    "http://softelvdm.com/Documentation/YetaWF/Support",
-    "http://softelvdm.com/Documentation/YetaWF/DefaultSkin#Release%20Notice",
-    "http://softelvdm.com/Documentation/YetaWF/DefaultSkin#License")]
+[assembly: Package(PackageTypeEnum.Skin, "YetaWF")]
+[assembly: PackageInfo("https://YetaWF.com/UpdateServer",
+    "https://yetawf.com/Documentation/YetaWF/DefaultSkin",
+    "https://yetawf.com/Documentation/YetaWF/DefaultSkin/Support",
+    "https://yetawf.com/Documentation/YetaWF/DefaultSkin#Release%20Notice",
+    "https://yetawf.com/Documentation/YetaWF/DefaultSkin#License")]
