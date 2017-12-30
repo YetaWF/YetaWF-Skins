@@ -78,6 +78,7 @@
     <None Include="Addons\_Skins\DefaultSkin\themes\superhero\Skin.scss" />
     <None Include="Addons\_Skins\DefaultSkin\themes\united\Skin.scss" />
     <None Include="Addons\_Skins\DefaultSkin\themes\yeti\Skin.scss" />
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

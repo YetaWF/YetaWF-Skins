@@ -43,6 +43,7 @@
     <None Include="Addons\_Skins\BusinessCasual\Popups\Popup.cshtml" />
     <None Include="Addons\_Skins\BusinessCasual\Popups\PopupMedium.cshtml" />
     <None Include="Addons\_Skins\BusinessCasual\Popups\PopupSmall.cshtml" />
+    <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Addons\_Skins\BusinessCasual\filelistCSS.txt" />
