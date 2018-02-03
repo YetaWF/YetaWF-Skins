@@ -187,7 +187,7 @@ label {
 /* POPUP */
 .yPopup,
 div.k-window-content.yPopupDyn {
-  padding: 1em 2ch 1em 2ch; }
+  padding: 1em 2ch 0 2ch; }
 
 /* PropertyListTabbed (in a popup) - stretch to fill popup - opt-in by module */
 .popup .YetaWF_SiteProperties_SiteProperties .yt_propertylisttabbed .t_tabpanel,

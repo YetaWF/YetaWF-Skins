@@ -232,7 +232,7 @@ label {
 /* POPUP */
 .yPopup,
 div.k-window-content.yPopupDyn {
-  padding: 1em 2ch 1em 2ch; }
+  padding: 1em 2ch 0 2ch; }
   .yPopup .yModule.modStandard,
   div.k-window-content.yPopupDyn .yModule.modStandard {
     padding-bottom: 15px; }
