@@ -17,39 +17,39 @@
 </head>
 <body class="@Manager.PageCss()">
     <noscript><div class="yDivWarning" style="height:100px;text-align:center;vertical-align:middle">This site requires Javascript</div></noscript>
-    @(Html.RenderModule<global::YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
+    @(Html.RenderModuleAsync<global::YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
         m.CssClass = "skinLockedStatus hidden-print";
-    }))
+    }).Result)
 
     <!-- Page Header -->
     <div class="container hidden-print">
         <div class="row">
             <div class="col-md-5">
-                @(Html.RenderModule<global::YetaWF.Modules.Text.Modules.TextModule>(new Guid("{AFA55B5E-1CA5-43c7-B9B3-245C172E0819}"), m => {
+                @(Html.RenderModuleAsync<global::YetaWF.Modules.Text.Modules.TextModule>(new Guid("{AFA55B5E-1CA5-43c7-B9B3-245C172E0819}"), m => {
                     m.Name = "Page Logo (Skin)";
                     m.ShowTitle = false;
                     m.EditOnPage = false;
                     m.CssClass = "skinLogo";
-                }))
+                }).Result)
             </div>
             <div class="col-md-3">
                 @if (Manager.CurrentSite.Localization) {
-                    @(Html.RenderModule<global::YetaWF.Modules.TinyLanguage.Modules.TinyLanguageModule>(new Guid("{E24356D7-9F90-42e6-A370-ECDB36FD34F5}"), m => {
+                    @(Html.RenderModuleAsync<global::YetaWF.Modules.TinyLanguage.Modules.TinyLanguageModule>(new Guid("{E24356D7-9F90-42e6-A370-ECDB36FD34F5}"), m => {
                         m.Name = "Tiny Language (Skin)";
                         m.CssClass = "skinTinyLanguage navbar-form";
-                    }))
+                    }).Result)
                 }
             </div>
             <div class="col-md-4">
-                @(Html.RenderModule<global::YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
+                @(Html.RenderModuleAsync<global::YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
                     m.CssClass = "skinTinyLogin navbar-form navbar-right";
-                }))
-                @*@(Html.RenderModule<global::YetaWF.Modules.Search.Modules.SearchInputModule>(new Guid("{B6EB73A4-0316-46f1-831B-0993CD280F61}"), m => {
+                }).Result)
+                @*@(Html.RenderModuleAsync<global::YetaWF.Modules.Search.Modules.SearchInputModule>(new Guid("{B6EB73A4-0316-46f1-831B-0993CD280F61}"), m => {
                     m.ShowTitle = false;
                     m.Name = "Search Input (Skin)";
                     m.CssClass = "skinSearchInput navbar-form navbar-right";
-                }))*@
-                @(Html.RenderModule<global::YetaWF.Modules.Visitors.Modules.TinyVisitorsModule>())
+                }).Result)*@
+                @(Html.RenderModuleAsync<global::YetaWF.Modules.Visitors.Modules.TinyVisitorsModule>().Result)
             </div>
         </div>
     </div>
@@ -65,9 +65,9 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            @(Html.RenderModule<global::YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
+            @(Html.RenderModuleAsync<global::YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
                 m.Name = "Main Menu Module (Skin)";
-            }))
+            }).Result)
         </div>
     </nav>
 
@@ -75,7 +75,7 @@
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                @RenderPane("Header", "col-md-12 HeaderPane AnyPane", Unified: true)
+                @RenderPaneAsync("Header", "col-md-12 HeaderPane AnyPane", Unified: true).Result
             </div>
         </div>
     </div>
@@ -83,27 +83,27 @@
     <!-- Panes -->
     <div class="container maincontainer">
         <div class="row">
-            @RenderPane("", "col-md-12 MainPane AnyPane", Unified: true)
+            @RenderPaneAsync("", "col-md-12 MainPane AnyPane", Unified: true).Result
         </div>
         <div class="row">
-            @RenderPane("PaneSetL2_RightPane", "col-md-4 PaneSetL2_MainPane AnyPane", Unified: true)
-            @RenderPane("PaneSetL2_MainPane", "col-md-8 PaneSetL2_LeftPane AnyPane", Unified: true)
+            @RenderPaneAsync("PaneSetL2_RightPane", "col-md-4 PaneSetL2_MainPane AnyPane", Unified: true).Result
+            @RenderPaneAsync("PaneSetL2_MainPane", "col-md-8 PaneSetL2_LeftPane AnyPane", Unified: true).Result
         </div>
         <div class="row">
-            @RenderPane("PaneSet3_LeftPane", "col-md-3 PaneSet3_LeftPane AnyPane", Unified: true)
-            @RenderPane("PaneSet3_MainPane", "col-md-6 PaneSet3_MainPane AnyPane", Unified: true)
-            @RenderPane("PaneSet3_RightPane", "col-md-3 PaneSet3_RightPane AnyPane", Unified: true)
+            @RenderPaneAsync("PaneSet3_LeftPane", "col-md-3 PaneSet3_LeftPane AnyPane", Unified: true).Result
+            @RenderPaneAsync("PaneSet3_MainPane", "col-md-6 PaneSet3_MainPane AnyPane", Unified: true).Result
+            @RenderPaneAsync("PaneSet3_RightPane", "col-md-3 PaneSet3_RightPane AnyPane", Unified: true).Result
         </div>
         <div class="row">
-            @RenderPane("PaneSetR2_MainPane", "col-md-8 PaneSetR2_MainPane AnyPane", Unified: true)
-            @RenderPane("PaneSetR2_RightPane", "col-md-4 PaneSetR2_RightPane AnyPane", Unified: true)
+            @RenderPaneAsync("PaneSetR2_MainPane", "col-md-8 PaneSetR2_MainPane AnyPane", Unified: true).Result
+            @RenderPaneAsync("PaneSetR2_RightPane", "col-md-4 PaneSetR2_RightPane AnyPane", Unified: true).Result
         </div>
     </div> <!-- /container -->
 
     <div class="PaneSetFooter"><!-- add LandingPage to page as Page Css to show the large footer -->
         <div class="container">
             <div class="row col-md-12">
-                @RenderPane("Footer", "FooterPane AnyPane", Unified: true)
+                @RenderPaneAsync("Footer", "FooterPane AnyPane", Unified: true).Result
             </div>
         </div>
     </div>
@@ -116,9 +116,9 @@
         </div>
     </footer>
 
-    @(Html.RenderEditControl<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>())
-    @(Html.RenderPageControl<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>())
+    @(Html.RenderEditControlAsync<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>().Result)
+    @(Html.RenderPageControlAsync<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>().Result)
 
-    @(Html.RenderUniqueModuleAddOns())
+    @(Html.RenderUniqueModuleAddOnsAsync().Result)
 </body>
 </html>
