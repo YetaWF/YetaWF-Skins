@@ -16,12 +16,12 @@
 </head>
 <body class="@Manager.PageCss()">
     <noscript><div class="yDivWarning" style="height:100px;text-align:center;vertical-align:middle">This site requires Javascript</div></noscript>
-    @(Html.RenderEditControlAsync<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>().Result)
-    @(Html.RenderPageControlAsync<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>().Result)
+    @(await Html.RenderEditControlAsync<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>())
+    @(await Html.RenderPageControlAsync<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>())
     <div class="MainPane">
-        @RenderPaneAsync("", "MainPane AnyPane").Result
+        @await RenderPaneAsync("", "MainPane AnyPane")
     </div>
     <div class="pageFooter">[[PageOrSite,CopyrightEvaluated]]</div>
-    @Html.RenderUniqueModuleAddOnsAsync().Result
+    @await Html.RenderUniqueModuleAddOnsAsync()
 </body>
 </html>

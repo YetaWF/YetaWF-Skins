@@ -21,9 +21,9 @@
 </head>
 <body class="@Manager.PageCss()">
     <noscript><div class="yDivWarning" style="height:100px;text-align:center;vertical-align:middle">This site requires Javascript</div></noscript>
-    @(Html.RenderModuleAsync<global::YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
+    @(await Html.RenderModuleAsync<global::YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
         m.CssClass = "skinLockedStatus hidden-print";
-    }).Result)
+    }))
 
     <div class="brand">Business Casual</div>
     <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
@@ -32,9 +32,9 @@
     <div class="container hidden-print">
         <div class="row">
             <div class="col-md-12">
-                @(Html.RenderModuleAsync<global::YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
+                @(await Html.RenderModuleAsync<global::YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
                     m.CssClass = "skinTinyLogin navbar-form navbar-right";
-                }).Result)
+                }))
             </div>
         </div>
     </div>
@@ -53,37 +53,37 @@
                 <a class="navbar-brand" href="/">Business Casual</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            @(Html.RenderModuleAsync<global::YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
+            @(await Html.RenderModuleAsync<global::YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
                 m.Name = "Main Menu Module (Skin)";
-            }).Result)
+            }))
         </div>
     </nav>
 
     <!-- Panes -->
     <div class="container">
         <div class="row">
-            @RenderPaneAsync("Header", "col-md-12 HeaderPane AnyPane", Unified: true).Result
+            @await RenderPaneAsync("Header", "col-md-12 HeaderPane AnyPane", Unified: true)
         </div>
         <div class="row main-row">
-            @RenderPaneAsync("", "col-md-12 MainPane AnyPane", Unified: true).Result
+            @await RenderPaneAsync("", "col-md-12 MainPane AnyPane", Unified: true)
         </div>
         <div class="row">
-            @RenderPaneAsync("PaneSetL2_LeftPane", "col-md-4 PaneSetL2_LeftPane AnyPane", Unified: true).Result
-            @RenderPaneAsync("PaneSetL2_MainPane", "col-md-8 PaneSetL2_MainPane AnyPane", Unified: true).Result
+            @await RenderPaneAsync("PaneSetL2_LeftPane", "col-md-4 PaneSetL2_LeftPane AnyPane", Unified: true)
+            @await RenderPaneAsync("PaneSetL2_MainPane", "col-md-8 PaneSetL2_MainPane AnyPane", Unified: true)
         </div>
         <div class="row">
-            @RenderPaneAsync("PaneSet3_LeftPane", "col-md-3 PaneSet3_LeftPane AnyPane", Unified: true).Result
-            @RenderPaneAsync("PaneSet3_MainPane", "col-md-6 PaneSet3_MainPane AnyPane", Unified: true).Result
-            @RenderPaneAsync("PaneSet3_RightPane", "col-md-3 PaneSet3_RightPane AnyPane", Unified: true).Result
+            @await RenderPaneAsync("PaneSet3_LeftPane", "col-md-3 PaneSet3_LeftPane AnyPane", Unified: true)
+            @await RenderPaneAsync("PaneSet3_MainPane", "col-md-6 PaneSet3_MainPane AnyPane", Unified: true)
+            @await RenderPaneAsync("PaneSet3_RightPane", "col-md-3 PaneSet3_RightPane AnyPane", Unified: true)
         </div>
         <div class="row">
-            @RenderPaneAsync("PaneSetR2_MainPane", "col-md-8 PaneSetR2_MainPane AnyPane", Unified: true).Result
-            @RenderPaneAsync("PaneSetR2_RightPane", "col-md-4 PaneSetR2_RightPane AnyPane", Unified: true).Result
+            @await RenderPaneAsync("PaneSetR2_MainPane", "col-md-8 PaneSetR2_MainPane AnyPane", Unified: true)
+            @await RenderPaneAsync("PaneSetR2_RightPane", "col-md-4 PaneSetR2_RightPane AnyPane", Unified: true)
         </div>
     </div>
     <div class="container">
         <div class="row footer-row">
-            @RenderPaneAsync("Footer", "col-md-12 FooterPane AnyPane", Unified: true).Result
+            @await RenderPaneAsync("Footer", "col-md-12 FooterPane AnyPane", Unified: true)
         </div>
     </div>
 
@@ -97,12 +97,12 @@
         </div>
     </footer>
 
-    @(Html.RenderModuleAsync<global::YetaWF.Modules.Search.Modules.SearchControlModule>().Result)
+    @(await Html.RenderModuleAsync<global::YetaWF.Modules.Search.Modules.SearchControlModule>())
 
-    @(Html.RenderEditControlAsync<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>().Result)
-    @(Html.RenderPageControlAsync<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>().Result)
+    @(await Html.RenderEditControlAsync<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>())
+    @(await Html.RenderPageControlAsync<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>())
 
-    @Html.RenderUniqueModuleAddOnsAsync().Result
+    @await Html.RenderUniqueModuleAddOnsAsync()
 
     <script>
         YetaWF_Basics.whenReady.push({

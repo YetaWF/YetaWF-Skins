@@ -12,7 +12,7 @@
     [[ThisPage,-HrefLangHtml]]
 </head>
 <body class="@Manager.PageCss()">
-    @RenderPaneAsync("", "MainPane AnyPane").Result
-    @Html.RenderUniqueModuleAddOnsAsync().Result
+    @await RenderPaneAsync("", "MainPane AnyPane")
+    @await Html.RenderUniqueModuleAddOnsAsync()
 </body>
 </html>
