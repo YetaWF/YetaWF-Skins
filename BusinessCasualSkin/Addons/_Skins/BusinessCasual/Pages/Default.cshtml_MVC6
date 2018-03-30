@@ -4,8 +4,8 @@
 @using global::YetaWF.Core.Menus
 @inherits global::YetaWF.Core.Pages.RazorPage
 @{
-    Manager.CssManager.AddFile(false, "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
-    Manager.CssManager.AddFile(false, "https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic");
+    await Manager.CssManager.AddFileAsync(false, "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
+    await Manager.CssManager.AddFileAsync(false, "https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic");
 }
 <!DOCTYPE html>
 <html lang="@Manager.CurrentPage.GetPageLanguageId()">
