@@ -29,4 +29,9 @@
     <None Remove="node_modules\**" /><EmbeddedResource Remove="node_modules\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="BootstrapSample.csproj_MVC5" />
+    <None Remove="BootstrapSample.csproj_MVC6" />
+  </ItemGroup>
+
 </Project>
