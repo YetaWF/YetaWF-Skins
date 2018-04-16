@@ -88,11 +88,13 @@ fieldset {
 /* PAGE/MODULE EDIT CONTROL */
 #yEditControlDiv {
   top: 20px;
-  left: 3ch; }
+  left: 3ch;
+  width: 100px; }
 
 #yPageControlDiv {
   top: 60px;
-  left: 3ch; }
+  left: 3ch;
+  width: 100px; }
 
 /* MODULES */
 /* MODULES */
