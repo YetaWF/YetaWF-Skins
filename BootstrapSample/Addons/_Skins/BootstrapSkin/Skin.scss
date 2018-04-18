@@ -63,17 +63,17 @@ select.t_native {
 }
 
 /* Landing Page - add LandingPage to page as Page Css to show the jumbotron */
-.jumbotron  {
-    display:none;
+body:not(.yEditMode) .jumbotron {
+    display: none;
 }
 .LandingPage .jumbotron {
     display:block;
 }
-.PaneSetFooter {
-    display:none;
+body:not(.yEditMode) .PaneSetFooter {
+    display: none;
 }
 .LandingPage .PaneSetFooter {
-    display:block;
+    display: block;
 }
 
 /* JQUERY-UI */
