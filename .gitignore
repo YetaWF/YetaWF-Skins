@@ -38,3 +38,4 @@ app.config
 !BootstrapSample/Addons/_Skins/BootstrapSkin/js/*.min.js
 
 *.cshtml
+*.deps.json
