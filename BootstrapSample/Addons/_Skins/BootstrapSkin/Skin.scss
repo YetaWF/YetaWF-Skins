@@ -63,14 +63,20 @@ select.t_native {
 }
 
 /* Landing Page - add LandingPage to page as Page Css to show the jumbotron */
-body:not(.yEditMode) .jumbotron {
+.jumbotron {
     display: none;
+}
+body.yEditMode .jumbotron {
+    display: block;
 }
 .LandingPage .jumbotron {
-    display:block;
+    display: block;
 }
-body:not(.yEditMode) .PaneSetFooter {
+.PaneSetFooter {
     display: none;
+}
+body.yEditMode .PaneSetFooter {
+    display: block;
 }
 .LandingPage .PaneSetFooter {
     display: block;
