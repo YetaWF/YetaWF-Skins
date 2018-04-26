@@ -83,19 +83,6 @@ body:not(.yEditMode) .PaneSetFooter {
   border: 1px solid #e4e3e3;
   border-radius: 3px; }
 
-/* PAGE/MODULE EDIT CONTROL */
-/* PAGE/MODULE EDIT CONTROL */
-/* PAGE/MODULE EDIT CONTROL */
-#yEditControlDiv {
-  top: 20px;
-  left: 3ch;
-  width: 100px; }
-
-#yPageControlDiv {
-  top: 60px;
-  left: 3ch;
-  width: 100px; }
-
 /* MODULES */
 /* MODULES */
 /* MODULES */
