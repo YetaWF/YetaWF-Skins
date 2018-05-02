@@ -111,8 +111,6 @@
         <p>[[PageOrSite,CopyrightEvaluated]]</p>
     </footer>
 
-    @(Html.RenderModuleAsync<global::YetaWF.Modules.Search.Modules.SearchControlModule>().Result)
-
     @(Html.RenderEditControlAsync<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>().Result)
     @(Html.RenderPageControlAsync<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>().Result)
 
