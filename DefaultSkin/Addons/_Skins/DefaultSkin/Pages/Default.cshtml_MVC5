@@ -59,9 +59,9 @@
             <a class="navbar-brand" href="#"></a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".yPageMenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-</div>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             @(Html.RenderModuleAsync<global::YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
                 m.Name = "Main Menu Module (Skin)";
             }).Result)

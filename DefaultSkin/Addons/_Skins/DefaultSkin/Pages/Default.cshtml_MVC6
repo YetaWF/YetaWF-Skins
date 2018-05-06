@@ -18,13 +18,13 @@
 <body class="@Manager.PageCss()">
     <noscript><div class="yDivWarning" style="height:100px;text-align:center;vertical-align:middle">This site requires Javascript</div></noscript>
     @(await Html.RenderModuleAsync<global::YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
-        m.CssClass = "skinLockedStatus hidden-print";
+        m.CssClass = "skinLockedStatus d-print-none";
     }))
 
     <!-- Page Header -->
-    <div class="container hidden-print">
+    <div class="container d-print-none">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-lg-5 mt-0">
                 @(await Html.RenderModuleAsync<global::YetaWF.Modules.Text.Modules.TextModule>(new Guid("{AFA55B5E-1CA5-43c7-B9B3-245C172E0819}"), m => {
                     m.Name = "Page Logo (Skin)";
                     m.ShowTitle = false;
@@ -32,36 +32,34 @@
                     m.CssClass = "skinLogo";
                 }))
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3 mt-2">
                 @if (Manager.CurrentSite.Localization) {
                     @(await Html.RenderModuleAsync<global::YetaWF.Modules.TinyLanguage.Modules.TinyLanguageModule>(new Guid("{E24356D7-9F90-42e6-A370-ECDB36FD34F5}"), m => {
                         m.Name = "Tiny Language (Skin)";
-                        m.CssClass = "skinTinyLanguage navbar-form";
+                        m.CssClass = "skinTinyLanguage";
                     }))
                 }
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 mt-2 d-flex justify-content-end">
                 @(await Html.RenderModuleAsync<global::YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
-                    m.CssClass = "skinTinyLogin navbar-form navbar-right";
+                    m.CssClass = "skinTinyLogin";
                 }))
                 @*@(await Html.RenderModuleAsync<global::YetaWF.Modules.Search.Modules.SearchInputModule>(new Guid("{B6EB73A4-0316-46f1-831B-0993CD280F61}"), m => {
                     m.ShowTitle = false;
                     m.Name = "Search Input (Skin)";
-                    m.CssClass = "skinSearchInput navbar-form navbar-right";
+                    m.CssClass = "skinSearchInput";
                 }))*@
             </div>
         </div>
     </div>
 
     <!-- Main Menu Navbar -->
-    <nav class="navbar navbar-light navbar-static-top hidden-print">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-print-none mt-3 mt-lg-0">
         <div class="container">
+            <a class="navbar-brand" href="#"></a>
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".yPageMenu">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".yPageMenu">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
             @(await Html.RenderModuleAsync<global::YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
@@ -74,7 +72,7 @@
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                @await RenderPaneAsync("Header", "col-md-12 HeaderPane AnyPane", Unified: true)
+                @await RenderPaneAsync("Header", "col-lg-12 HeaderPane AnyPane", Unified: true)
             </div>
         </div>
     </div>
@@ -82,26 +80,26 @@
     <!-- Panes -->
     <div class="container maincontainer">
         <div class="row">
-            @await RenderPaneAsync("", "col-md-12 MainPane AnyPane", Unified: true)
+            @await RenderPaneAsync("", "col-lg-12 MainPane AnyPane", Unified: true)
         </div>
         <div class="row">
-            @await RenderPaneAsync("PaneSetL2_LeftPane", "col-md-4 PaneSetL2_LeftPane AnyPane", Unified: true)
-            @await RenderPaneAsync("PaneSetL2_MainPane", "col-md-8 PaneSetL2_MainPane AnyPane", Unified: true)
+            @await RenderPaneAsync("PaneSetL2_LeftPane", "col-lg-4 PaneSetL2_LeftPane AnyPane", Unified: true)
+            @await RenderPaneAsync("PaneSetL2_MainPane", "col-lg-8 PaneSetL2_MainPane AnyPane", Unified: true)
         </div>
         <div class="row">
-            @await RenderPaneAsync("PaneSet3_LeftPane", "col-md-3 PaneSet3_LeftPane AnyPane", Unified: true)
-            @await RenderPaneAsync("PaneSet3_MainPane", "col-md-6 PaneSet3_MainPane AnyPane", Unified: true)
-            @await RenderPaneAsync("PaneSet3_RightPane", "col-md-3 PaneSet3_RightPane AnyPane", Unified: true)
+            @await RenderPaneAsync("PaneSet3_LeftPane", "col-lg-3 PaneSet3_LeftPane AnyPane", Unified: true)
+            @await RenderPaneAsync("PaneSet3_MainPane", "col-lg-6 PaneSet3_MainPane AnyPane", Unified: true)
+            @await RenderPaneAsync("PaneSet3_RightPane", "col-lg-3 PaneSet3_RightPane AnyPane", Unified: true)
         </div>
         <div class="row">
-            @await RenderPaneAsync("PaneSetR2_MainPane", "col-md-8 PaneSetR2_MainPane AnyPane", Unified: true)
-            @await RenderPaneAsync("PaneSetR2_RightPane", "col-md-4 PaneSetR2_RightPane AnyPane", Unified: true)
+            @await RenderPaneAsync("PaneSetR2_MainPane", "col-lg-8 PaneSetR2_MainPane AnyPane", Unified: true)
+            @await RenderPaneAsync("PaneSetR2_RightPane", "col-lg-4 PaneSetR2_RightPane AnyPane", Unified: true)
         </div>
     </div>
 
     <div class="PaneSetFooter">
         <div class="container">
-            <div class="row col-md-12">
+            <div class="row col-lg-12">
                 @await RenderPaneAsync("Footer", "FooterPane AnyPane", Unified: true)
             </div>
         </div>
