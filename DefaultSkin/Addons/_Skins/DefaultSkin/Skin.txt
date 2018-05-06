@@ -4,7 +4,7 @@ KendoSkin
 UsingBootstrap true
 UseDefaultBootstrap true
 UsingBootstrapButtons true
-PartialFormCss well
+PartialFormCss card card-body
 MinWidthForPopups 970
 ::Pages::
 Default;Default.cshtml;Standard page (optional jumbotron, multi-column, footer);pageSkinDefault;8;16

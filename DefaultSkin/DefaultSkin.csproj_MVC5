@@ -74,6 +74,9 @@
     <None Include="Addons\_Skins\DefaultSkin\themes\materia\Skin.scss" />
     <None Include="Addons\_Skins\DefaultSkin\themes\lux\Skin.scss" />
     <None Include="Addons\_Skins\DefaultSkin\themes\lumen\Skin.scss" />
+    <None Include="Addons\_Skins\DefaultSkin\themes\pulse\Skin.scss" />
+    <None Include="Addons\_Skins\DefaultSkin\themes\solar\Skin.scss" />
+    <None Include="Addons\_Skins\DefaultSkin\themes\sketchy\Skin.scss" />
     <None Include="Addons\_Skins\DefaultSkin\themes\sandstone\Skin.scss" />
     <None Include="Addons\_Skins\DefaultSkin\themes\simplex\Skin.scss" />
     <None Include="Addons\_Skins\DefaultSkin\themes\slate\Skin.scss" />

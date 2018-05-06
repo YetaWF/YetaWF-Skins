@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col-md-12">
                 @(Html.RenderModuleAsync<global::YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
-                    m.CssClass = "skinTinyLogin navbar-form navbar-right";
+                    m.CssClass = "skinTinyLogin";
                 }).Result)
             </div>
         </div>

@@ -3,15 +3,29 @@
 /* GLOBALS */
 /* GLOBALS */
 /* GLOBALS */
+h1 {
+  margin-top: 1.5rem; }
+
+h2 {
+  margin-top: .9rem; }
+
+h3 {
+  margin-top: .2rem; }
+
 select.t_native {
   color: #000;
   background-color: #FFF; }
+
+footer {
+  padding: 20px 0 20px 0;
+  text-align: center; }
 
 fieldset {
   padding: .5ch .5em .5ch .5em;
   margin: 0;
   border: 1px solid silver; }
   fieldset legend {
+    font-size: 1rem;
     margin-bottom: .5em;
     width: auto;
     border: 0; }
@@ -19,20 +33,25 @@ fieldset {
 /* Wide Content - add widecontent to page as Page Css to show the content full width */
 .widecontent .maincontainer {
   width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   padding-right: 20px; }
 
 /* Landing Page - add LandingPage to page as Page Css to show the jumbotron */
-body:not(.yEditMode) .jumbotron {
-  display: none; }
-
-.LandingPage .jumbotron {
-  display: block; }
-
-body:not(.yEditMode) .PaneSetFooter {
-  display: none; }
-
-.LandingPage .PaneSetFooter {
-  display: block; }
+/* if there is no jumbotron, add some space below the menu */
+body {
+  /* needed for specificity) */ }
+  body .jumbotron {
+    margin-bottom: 0; }
+  body:not(.yEditMode) .jumbotron {
+    display: none; }
+  body.LandingPage .jumbotron {
+    display: block; }
+  body:not(.yEditMode) .PaneSetFooter {
+    display: none; }
+  body.LandingPage .PaneSetFooter {
+    display: block; }
 
 /* JQUERY-UI */
 /* JQUERY-UI */
@@ -43,7 +62,7 @@ body:not(.yEditMode) .PaneSetFooter {
 .ui-widget textarea,
 .ui-widget button {
   /* Override jquery-ui font to restore ours */
-  font-size: 100%; }
+  font-size: 14px; }
 
 /* OWNERSHIP */
 /* OWNERSHIP */
@@ -101,10 +120,6 @@ body:not(.yEditMode) .PaneSetFooter {
 /* PAGE FOOTER & FOOTER PANE */
 /* PAGE FOOTER & FOOTER PANE */
 /* PAGE FOOTER & FOOTER PANE */
-footer {
-  padding: 20px 0 20px 0;
-  text-align: center; }
-
 /* LABELS AND PROPERTY LISTS */
 /* LABELS AND PROPERTY LISTS */
 /* LABELS AND PROPERTY LISTS */
@@ -113,6 +128,8 @@ label {
   font-weight: normal; }
 
 .yCondense label {
+  padding-bottom: 0;
+  margin-bottom: 0;
   font-weight: bold; }
 
 /* Small screens */
@@ -129,15 +146,11 @@ label {
 /* POPUP */
 .yPopup,
 div.k-window-content.yPopupDyn {
-  padding: 1em 2ch 0 2ch; }
+  padding: .5em 2ch 0 2ch; }
 
-/* PRINTING */
-/* PRINTING */
-/* PRINTING */
-@media print {
-  /* Don't print href value for links - (Why would you, Bootstrap?) */
-  a[href]:after {
-    content: none !important; } }
+/* MEGAMENU */
+.YetaWF_Menus_MainMenu ul.t_megamenu_content li.t_megamenu_content {
+  line-height: 1.4; }
 
 /* TINYLOGIN MODULE COSMETICS */
 /* TINYLOGIN MODULE COSMETICS */
@@ -153,10 +166,6 @@ div.k-window-content.yPopupDyn {
 /* SEARCHINPUT MODULE COSMETICS */
 /* SEARCHINPUT MODULE COSMETICS */
 /* SEARCHINPUT MODULE COSMETICS */
-.skinSearchInput.navbar-form.navbar-right {
-  margin-right: -15px;
-  /*we have two modules in the same column*/ }
-
 .skinSearchInput .t_searchterms .t_labels {
   display: none; }
 

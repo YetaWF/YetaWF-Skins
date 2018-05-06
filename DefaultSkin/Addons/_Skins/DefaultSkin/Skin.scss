@@ -1,15 +1,24 @@
 ﻿/* Copyright © 2018 Softel vdm, Inc. - https://yetawf.com/Documentation/YetaWF/Licensing */
 
-$screen-md : 992px;
+$screen-lg : 992px;
 $base-fontsize: 14px;
 
 /* GLOBALS */
 /* GLOBALS */
 /* GLOBALS */
 
+h1 { margin-top:1.5rem; }
+h2 { margin-top:.9rem; }
+h3 { margin-top:.2rem; }
+
 select.t_native {
     color: #000;
     background-color:#FFF;
+}
+
+footer {
+    padding:20px 0 20px 0;
+    text-align: center;
 }
 
 fieldset {
@@ -17,6 +26,7 @@ fieldset {
     margin:0;
     border:1px solid silver;
     legend {
+        font-size:1rem;
         margin-bottom: .5em;
         width:auto;
         border:0;
@@ -27,22 +37,33 @@ fieldset {
 .widecontent {
     .maincontainer  {
         width:100%;
+        max-width:100%;
+        margin-left:0;
+        margin-right:0;
         padding-right: 20px;
     }
 }
 
 /* Landing Page - add LandingPage to page as Page Css to show the jumbotron */
-body:not(.yEditMode) .jumbotron {
-    display:none;
-}
-.LandingPage .jumbotron {
-    display:block;
-}
-body:not(.yEditMode) .PaneSetFooter {
-    display:none;
-}
-.LandingPage .PaneSetFooter {
-    display:block;
+
+/* if there is no jumbotron, add some space below the menu */
+
+body { /* needed for specificity) */
+    .jumbotron {
+        margin-bottom:0;
+    }
+    &:not(.yEditMode) .jumbotron {
+        display:none;
+    }
+    &.LandingPage .jumbotron {
+        display:block;
+    }
+    &:not(.yEditMode) .PaneSetFooter {
+        display:none;
+    }
+    &.LandingPage .PaneSetFooter {
+        display:block;
+    }
 }
 
 /* JQUERY-UI */
@@ -54,7 +75,7 @@ body:not(.yEditMode) .PaneSetFooter {
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {/* Override jquery-ui font to restore ours */
-    font-size: 100%;
+    font-size: 14px;
 }
 
 /* OWNERSHIP */
@@ -124,11 +145,6 @@ body:not(.yEditMode) .PaneSetFooter {
 /* PAGE FOOTER & FOOTER PANE */
 /* PAGE FOOTER & FOOTER PANE */
 
-footer {
-    padding:20px 0 20px 0;
-    text-align: center;
-}
-
 /* LABELS AND PROPERTY LISTS */
 /* LABELS AND PROPERTY LISTS */
 /* LABELS AND PROPERTY LISTS */
@@ -137,12 +153,14 @@ label {/* Bold labels are a bit harsh */
     font-weight:normal;
 }
 .yCondense label {
+    padding-bottom:0;
+    margin-bottom:0;
     font-weight:bold;
 }
 
 /* Small screens */
 
-@media (max-width: $screen-md) {
+@media (max-width: $screen-lg) {
     #yEditControlDiv {
         display:none;
     }
@@ -160,18 +178,13 @@ label {/* Bold labels are a bit harsh */
 
 .yPopup,
 div.k-window-content.yPopupDyn {
-    padding:1em 2ch 0 2ch;
+    padding:.5em 2ch 0 2ch;
 }
 
-/* PRINTING */
-/* PRINTING */
-/* PRINTING */
+/* MEGAMENU */
 
-@media print {
-    /* Don't print href value for links - (Why would you, Bootstrap?) */
-    a[href]:after {
-        content: none !important;
-    }
+.YetaWF_Menus_MainMenu ul.t_megamenu_content li.t_megamenu_content {
+    line-height:1.4;
 }
 
 /* TINYLOGIN MODULE COSMETICS */
@@ -193,9 +206,6 @@ div.k-window-content.yPopupDyn {
 /* SEARCHINPUT MODULE COSMETICS */
 /* SEARCHINPUT MODULE COSMETICS */
 
-.skinSearchInput.navbar-form.navbar-right {
-    margin-right:-15px;/*we have two modules in the same column*/
-}
 .skinSearchInput {
     .t_searchterms .t_labels {
         display:none;
@@ -266,3 +276,4 @@ div.k-window-content.yPopupDyn {
         }
     }
 }
+
