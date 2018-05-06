@@ -55,7 +55,7 @@
     </div>
 
     <!-- Main Menu Navbar -->
-    <nav class="navbar navbar-default navbar-static-top navbar-inverse hidden-print">
+    <nav class="navbar navbar-light navbar-static-top navbar-inverse hidden-print">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".yPageMenu">
