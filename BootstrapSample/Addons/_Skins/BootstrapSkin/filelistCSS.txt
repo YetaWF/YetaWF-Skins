@@ -1,3 +1,0 @@
-﻿css/bootstrap.min.css
-css/bootstrap-theme.min.css
-skin.scss
