@@ -19,7 +19,7 @@
     @(await Html.RenderEditControlAsync<global::YetaWF.Modules.PageEdit.Modules.EditModeModule>())
     @(await Html.RenderPageControlAsync<global::YetaWF.Modules.PageEdit.Modules.PageControlModule>())
     <div class="MainPane">
-        @await RenderPaneAsync("", "MainPane AnyPane")
+        @await RenderPaneAsync("", "MainPane AnyPane", Unified: true)
     </div>
     <div class="pageFooter">[[PageOrSite,CopyrightEvaluated]]</div>
     @await Html.RenderUniqueModuleAddOnsAsync()
