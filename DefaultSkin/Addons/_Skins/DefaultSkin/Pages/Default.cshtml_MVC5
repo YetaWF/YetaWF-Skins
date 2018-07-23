@@ -1,7 +1,6 @@
 ﻿@*Copyright © 2018 Softel vdm, Inc. - https://yetawf.com/Documentation/YetaWF/Licensing*@
 @using global::YetaWF.Core.Pages
 @using global::YetaWF.Core.Modules
-@using global::YetaWF.Core.Menus
 @inherits global::YetaWF.Core.Pages.RazorPage
 <!DOCTYPE html>
 <html lang="@Manager.CurrentPage.GetPageLanguageId()">
