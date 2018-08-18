@@ -39,4 +39,9 @@
     <None Remove="Addons\_Skins\DefaultSkin\Skin.min.css" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="Addons\_Skins\DefaultSkin\Pages\Default.cshtml" />
+    <None Include="Addons\_Skins\DefaultSkin\Pages\Plain.cshtml" />
+  </ItemGroup>
+
 </Project>
