@@ -42,17 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Addons\_Skins\DefaultSkin\filelistCSS.txt" />
-    <Content Include="Addons\_Skins\DefaultSkin\Icons\Add.png" />
-    <Content Include="Addons\_Skins\DefaultSkin\Icons\Browse.png" />
-    <Content Include="Addons\_Skins\DefaultSkin\Icons\Config.png" />
-    <Content Include="Addons\_Skins\DefaultSkin\Icons\Display.png" />
-    <Content Include="Addons\_Skins\DefaultSkin\Icons\Edit.png" />
-    <Content Include="Addons\_Skins\DefaultSkin\Icons\Generic.png" />
-    <Content Include="Addons\_Skins\DefaultSkin\Icons\Help.png" />
-    <Content Include="Addons\_Skins\DefaultSkin\Icons\ModuleMenu.png" />
-    <Content Include="Addons\_Skins\DefaultSkin\Icons\Preview.png" />
-    <Content Include="Addons\_Skins\DefaultSkin\Icons\Remove.png" />
-    <Content Include="Addons\_Skins\DefaultSkin\Icons\Warning.png" />
     <Content Include="Addons\_Skins\DefaultSkin\Skin.txt" />
   </ItemGroup>
   <ItemGroup>
