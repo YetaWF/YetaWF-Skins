@@ -125,11 +125,11 @@ body {
 /* LABELS AND PROPERTY LISTS */
 label {
   /* Bold labels are a bit harsh */
-  font-weight: normal; }
+  font-weight: normal;
+  margin-bottom: 0; }
 
 .yCondense label {
   padding-bottom: 0;
-  margin-bottom: 0;
   font-weight: bold; }
 
 /* Small screens */

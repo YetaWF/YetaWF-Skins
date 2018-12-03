@@ -149,12 +149,12 @@ body { /* needed for specificity) */
 /* LABELS AND PROPERTY LISTS */
 /* LABELS AND PROPERTY LISTS */
 
-label {/* Bold labels are a bit harsh */
-    font-weight:normal;
+label { /* Bold labels are a bit harsh */
+    font-weight: normal;
+    margin-bottom: 0;
 }
 .yCondense label {
     padding-bottom:0;
-    margin-bottom:0;
     font-weight:bold;
 }
 
