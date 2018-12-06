@@ -114,7 +114,8 @@ body {
 /* ACTIONS GAP BETWEEN IMAGE AND TEXT  */
 /* ACTIONS GAP BETWEEN IMAGE AND TEXT  */
 /* ACTIONS GAP BETWEEN IMAGE AND TEXT  */
-.y_act_textimg img {
+.y_act_textimg img,
+.y_act_textimg i {
   margin-right: .5ch; }
 
 /* PAGE FOOTER & FOOTER PANE */
