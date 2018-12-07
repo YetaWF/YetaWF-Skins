@@ -79,6 +79,9 @@
     <!-- Panes -->
     <div class="container maincontainer">
         <div class="row">
+            @await RenderPaneAsync("HeaderPane", "col-lg-12 HeaderPane AnyPane", Unified: true)
+        </div>
+        <div class="row">
             @await RenderPaneAsync("", "col-lg-12 MainPane AnyPane", Unified: true)
         </div>
         <div class="row">
