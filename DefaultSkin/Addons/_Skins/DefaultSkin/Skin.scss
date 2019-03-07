@@ -1,7 +1,8 @@
 ﻿/* Copyright © 2019 Softel vdm, Inc. - https://yetawf.com/Documentation/YetaWF/Licensing */
 
-$screen-lg : 992px;
-$base-fontsize: 14px;
+$font-size-base: 1rem;
+
+@import "node_modules/bootstrap/scss/bootstrap";
 
 /* GLOBALS */
 /* GLOBALS */
@@ -161,7 +162,7 @@ label { /* Bold labels are a bit harsh */
 
 /* Small screens */
 
-@media (max-width: $screen-lg) {
+@include media-breakpoint-down(lg) {
     #yEditControlDiv {
         display:none;
     }
@@ -256,7 +257,7 @@ div.k-window-content.yPopupDyn {
         .t_header {
             padding-bottom:1em;
             .t_title {
-                font-size: $base-fontsize + 4;
+                font-size: $font-size-base + 4;
             }
         }
         .t_headerentry {
@@ -268,7 +269,7 @@ div.k-window-content.yPopupDyn {
                 padding-bottom:.5em;
             }
             .t_date {
-                font-size: $base-fontsize - 2;
+                font-size: $font-size-base - 2;
             }
         }
         .t_entry {
