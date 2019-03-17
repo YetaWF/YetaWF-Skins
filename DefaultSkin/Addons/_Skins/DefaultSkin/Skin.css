@@ -56,11 +56,15 @@ body {
 /* JQUERY-UI */
 /* JQUERY-UI */
 /* JQUERY-UI */
-.ui-widget,
-.ui-widget input,
-.ui-widget select,
-.ui-widget textarea,
-.ui-widget button {
+.yPage .ui-widget,
+.yPage .ui-widget input,
+.yPage .ui-widget select,
+.yPage .ui-widget textarea,
+.yPage .ui-widget button, .yPopup .ui-widget,
+.yPopup .ui-widget input,
+.yPopup .ui-widget select,
+.yPopup .ui-widget textarea,
+.yPopup .ui-widget button {
   /* Override jquery-ui font to restore ours */
   font-size: 14px; }
 
