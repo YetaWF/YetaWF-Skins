@@ -29,3 +29,4 @@ using YetaWF.PackageAttributes;
 [assembly: RequiresPackage("YetaWF.SiteProperties")]
 [assembly: RequiresPackage("YetaWF.Text")]
 [assembly: RequiresPackage("YetaWF.TinyLogin")]
+[assembly: RequiresPackage("YetaWF.TinyLanguage")]
