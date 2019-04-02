@@ -76,7 +76,7 @@ namespace YetaWF.Skins.BootstrapSkin.Pages {
 <body class='{Manager.PageCss()}'>
     <noscript><div class='yDivWarning' style='height:100px;text-align:center;vertical-align:middle'>This site requires Javascript</div></noscript>
 
-    {await HtmlHelper.RenderModuleAsync<YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
+    {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
         m.CssClass = "skinLockedStatus d-print-none";
     })}
 
@@ -104,7 +104,7 @@ namespace YetaWF.Skins.BootstrapSkin.Pages {
             hb.Append($@"
             </div>
             <div class='col-lg-4 mt-2 d-flex justify-content-end'>
-                {await HtmlHelper.RenderModuleAsync<YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
+                {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
                     m.CssClass = "skinTinyLogin";
                 })}
             </div>
@@ -120,7 +120,7 @@ namespace YetaWF.Skins.BootstrapSkin.Pages {
                     <span class='navbar-toggler-icon'></span>
                 </button>
             </div>
-            {await HtmlHelper.RenderModuleAsync<YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
+            {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
                 m.Name = "Main Menu Module (Skin)";
             })}
         </div>
