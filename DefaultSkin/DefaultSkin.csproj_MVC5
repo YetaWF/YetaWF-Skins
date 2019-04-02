@@ -22,6 +22,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\YetaWF.DefaultSkin.XML</DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <RegisterForComInterop>false</RegisterForComInterop>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,6 +39,9 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Pages\HTML\Default.cs" />
+    <Compile Include="Pages\HTML\Plain.cs" />
+    <Compile Include="Pages\HTML\Popup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup\AreaRegistration.cs" />
     <Compile Include="Startup\Info.cs" />
@@ -43,13 +49,10 @@
   <ItemGroup>
     <Content Include="Addons\_Skins\DefaultSkin\filelistCSS.txt" />
     <Content Include="Addons\_Skins\DefaultSkin\Skin.txt" />
+    <Content Include="Addons\_Skins\DefaultSkin\themes\paper\Skin.min.css" />
+    <Content Include="Addons\_Skins\DefaultSkin\themes\readable\Skin.min.css" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Addons\_Skins\DefaultSkin\Pages\Default.cshtml" />
-    <None Include="Addons\_Skins\DefaultSkin\Pages\Plain.cshtml" />
-    <None Include="Addons\_Skins\DefaultSkin\Popups\Popup.cshtml" />
-    <None Include="Addons\_Skins\DefaultSkin\Popups\PopupMedium.cshtml" />
-    <None Include="Addons\_Skins\DefaultSkin\Popups\PopupSmall.cshtml" />
     <None Include="Addons\_Skins\DefaultSkin\Skin.scss" />
     <None Include="Addons\_Skins\DefaultSkin\themes\Bootstrap Default\Skin.scss" />
     <None Include="Addons\_Skins\DefaultSkin\themes\cerulean\Skin.scss" />
@@ -80,6 +83,30 @@
     <ProjectReference Include="..\..\..\CoreComponents\Core\Core.csproj">
       <Project>{71ACC7AC-2622-4127-B925-D058C01A39E5}</Project>
       <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Modules\YetaWF\Menus\Menus.csproj">
+      <Project>{ac2fc261-b14a-489a-809b-89e878a44a77}</Project>
+      <Name>Menus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Modules\YetaWF\PageEdit\PageEdit.csproj">
+      <Project>{a86c1f1b-940f-414c-b23a-102432a69d5e}</Project>
+      <Name>PageEdit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Modules\YetaWF\SiteProperties\SiteProperties.csproj">
+      <Project>{6346ad84-48d7-4c28-8bcb-5d8b1caa8735}</Project>
+      <Name>SiteProperties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Modules\YetaWF\Text\Text.csproj">
+      <Project>{57b84b67-da40-41b3-8c37-b544f3730c25}</Project>
+      <Name>Text</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Modules\YetaWF\TinyLanguage\TinyLanguage.csproj">
+      <Project>{4d7f8814-7a93-47b0-bd72-579f5e293d84}</Project>
+      <Name>TinyLanguage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Modules\YetaWF\TinyLogin\TinyLogin.csproj">
+      <Project>{e0ad8487-7a53-4be7-b012-5d2377f5ccea}</Project>
+      <Name>TinyLogin</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
