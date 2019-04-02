@@ -19,6 +19,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\CoreComponents\Core\Core.csproj" />
+    <ProjectReference Include="..\..\..\Modules\YetaWF\Menus\Menus.csproj" />
+    <ProjectReference Include="..\..\..\Modules\YetaWF\PageEdit\PageEdit.csproj" />
+    <ProjectReference Include="..\..\..\Modules\YetaWF\SiteProperties\SiteProperties.csproj" />
+    <ProjectReference Include="..\..\..\Modules\YetaWF\Text\Text.csproj" />
+    <ProjectReference Include="..\..\..\Modules\YetaWF\TinyLanguage\TinyLanguage.csproj" />
+    <ProjectReference Include="..\..\..\Modules\YetaWF\TinyLogin\TinyLogin.csproj" />
   </ItemGroup>
 
   <ItemGroup>
