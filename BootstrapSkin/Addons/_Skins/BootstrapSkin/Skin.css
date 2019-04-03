@@ -8078,7 +8078,8 @@ select.t_native {
 .yPane .yModule {
   margin: 1.5em 0 1em 0; }
 
-.yPopupDyn .yPane .yModule {
+.yPopupDyn .yPane .yModule,
+.yPopup .yPane .yModule {
   margin: 0; }
 
 /* Pane in edit mode */
@@ -8175,7 +8176,7 @@ body {
   .YetaWF_Feed_Feed .t_news .t_header {
     padding-bottom: 1em; }
     .YetaWF_Feed_Feed .t_news .t_header .t_title {
-      font-size: 5rem; }
+      font-size: 1.25rem; }
   .YetaWF_Feed_Feed .t_news .t_headerentry {
     border: 1px solid silver;
     border-radius: 5px;
@@ -8184,7 +8185,7 @@ body {
     .YetaWF_Feed_Feed .t_news .t_headerentry .t_title, .YetaWF_Feed_Feed .t_news .t_headerentry .t_text {
       padding-bottom: .5em; }
     .YetaWF_Feed_Feed .t_news .t_headerentry .t_date {
-      font-size: -1rem; }
+      font-size: 0.8rem; }
   .YetaWF_Feed_Feed .t_news .t_entry {
     padding-top: .2em;
     padding-bottom: .2em; }
