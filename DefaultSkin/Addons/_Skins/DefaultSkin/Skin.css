@@ -196,8 +196,12 @@ div.k-window-content.yPopupDyn {
     height: 50em; }
 
 .YetaWF_Menus_MenuEdit .t_details {
+  max-width: 700px;
   float: left;
   font-size: smaller; }
+
+.YetaWF_Menus_MenuEdit .t_detailsbuttons input {
+  margin-bottom: .2em; }
 
 /* NEWS FEED */
 /* NEWS FEED */

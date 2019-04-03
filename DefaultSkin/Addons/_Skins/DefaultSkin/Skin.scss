@@ -241,8 +241,12 @@ div.k-window-content.yPopupDyn {
         }
     }
     .t_details {
+       max-width:700px;
         float:left;
         font-size:smaller;
+    }
+    .t_detailsbuttons input {
+        margin-bottom:.2em;
     }
 }
 
