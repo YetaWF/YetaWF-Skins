@@ -8,7 +8,7 @@ using YetaWF.Core.Components;
 using YetaWF.Core.Modules;
 using YetaWF.Core.Packages;
 using YetaWF.Core.Support;
-using YetaWF.Modules.DefaultSkin.Controllers;
+using YetaWF.Skins.DefaultSkin.Controllers;
 
 namespace YetaWF.Skins.DefaultSkin.Pages {
 

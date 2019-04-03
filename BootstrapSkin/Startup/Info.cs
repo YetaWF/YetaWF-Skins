@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using YetaWF.Core.Addons;
 using YetaWF.Core.Support;
 
-namespace YetaWF.Modules.BootstrapSkin.Addons {
+namespace YetaWF.Skins.BootstrapSkin.Addons {
 
     /// <summary>
     /// Implements the YetaWF.Core.Addons.IAddOnSupport interface, which is called when the framework detects the use of the YetaWF.BootstrapSkin package.

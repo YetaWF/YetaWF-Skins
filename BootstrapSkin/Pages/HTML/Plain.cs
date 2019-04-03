@@ -2,7 +2,7 @@
 
 using YetaWF.Core.Components;
 using YetaWF.Core.Packages;
-using YetaWF.Modules.BootstrapSkin.Controllers;
+using YetaWF.Skins.BootstrapSkin.Controllers;
 
 namespace YetaWF.Skins.BootstrapSkin.Pages {
 

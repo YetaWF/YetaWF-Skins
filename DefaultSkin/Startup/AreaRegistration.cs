@@ -2,7 +2,7 @@
 
 using YetaWF.Core.Packages;
 
-namespace YetaWF.Modules.DefaultSkin.Controllers {
+namespace YetaWF.Skins.DefaultSkin.Controllers {
     /// <summary>
     /// MVC area registration class.
     /// </summary>

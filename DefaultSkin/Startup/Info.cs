@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using YetaWF.Core.Addons;
 using YetaWF.Core.Support;
 
-namespace YetaWF.Modules.DefaultSkin.Addons {
+namespace YetaWF.Skins.DefaultSkin.Addons {
 
     /// <summary>
     /// Implements the YetaWF.Core.Addons.IAddOnSupport interface, which is called when the framework detects the use of the YetaWF.DefaultSkin package.
