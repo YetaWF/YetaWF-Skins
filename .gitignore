@@ -10,9 +10,7 @@ packages.config
 app.config
 
 **/obj/
-**/bin/**/*.xml
-**/bin/**/*.config
-**/bin/**/*.manifest
+**/bin/
 
 **/Addons/_Addons/**/*.min.js
 **/Addons/_Addons/**/*.min.css

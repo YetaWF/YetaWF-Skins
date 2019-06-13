@@ -1,2 +1,2 @@
-﻿skin.scss
-themes\{BootstrapSkin}\skin.scss
+﻿Skin.scss
+themes/{BootstrapSkin}/Skin.scss
