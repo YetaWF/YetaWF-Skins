@@ -1,2 +1,2 @@
-﻿skin.scss
+﻿Skin.scss
 
