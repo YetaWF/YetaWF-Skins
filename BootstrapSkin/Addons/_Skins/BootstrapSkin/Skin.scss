@@ -11,7 +11,7 @@
 
 /* Ownership background colors*/
 $noAnon-color: $gray-200;       /* Can't be seen by anonymous users, OK for regular users */
-$noUser-color: $gray-400;       /* Can't be seen by anonymous users, OK for regular users */
+$noUser-color: $gray-400;       /* Can't be seen by regular users, OK for anonymous users */
 $noUserAnon-color: $gray-600;   /* Can't be seen by anonymous or regular users */
 
 
@@ -162,7 +162,6 @@ body { /* needed for specificity) */
 .pageSkinPlain {
     margin: 2ch;
 }
-
 
 
 /* TINYLOGIN MODULE COSMETICS */
