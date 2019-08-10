@@ -7532,7 +7532,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* Ownership background colors*/
 /* Can't be seen by anonymous users, OK for regular users */
-/* Can't be seen by anonymous users, OK for regular users */
+/* Can't be seen by regular users, OK for anonymous users */
 /* Can't be seen by anonymous or regular users */
 /* GLOBALS */
 /* GLOBALS */
