@@ -1,0 +1,17 @@
+Nginx Skin - Customizable through variables, includes all Bootstrap CSS, JavaScript
+JQuerySkin
+KendoSkin
+UsingBootstrap true
+UseDefaultBootstrap false
+UsingBootstrapButtons true
+PartialFormCss card card-body
+MinWidthForPopups 970
+::Pages::
+Default;Default;Standard page (optional jumbotron, multi-column, footer);pageSkinDefault;8;16
+Plain;Plain;Simple page for just one module;pageSkinPlain;8;16
+::Popups::
+Popup (Default);Popup;Standard popup window;popup;1000;700;0;8;16
+Medium Popup;PopupMedium;Medium popup window;popupMedium;700;500;0;8;16
+Small Popup;PopupSmall;Small popup window;popupSmall;500;300;0;8;16
+::Modules::
+Standard (Default);modStandard;Standard module;9;20
