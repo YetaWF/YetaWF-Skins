@@ -7650,6 +7650,28 @@ body {
   margin-right: 0;
   padding-right: 20px; }
 
+.widecontentfill body {
+  overflow: hidden; }
+
+.widecontentfill .maincontainer {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
+
+.widecontentfill footer,
+.widecontentfill .PaneSetFooter {
+  display: none; }
+
+.widecontentfill .yPane .yModule {
+  margin: 0; }
+
+.widecontentfill .MainPane {
+  padding: 0; }
+
+.widecontentfill .YetaWF_Panels_PageBar .t_area .yModule {
+  margin-bottom: 10px; }
+
 /* Plain Skin Specifics */
 /* Plain Skin Specifics */
 /* Plain Skin Specifics */
@@ -7725,3 +7747,34 @@ body {
   .YetaWF_Feed_Feed .t_news .t_entry {
     padding-top: .2em;
     padding-bottom: .2em; }
+
+/* MENU */
+.YetaWF_Menus .t_megamenu_content {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2); }
+
+/* PAGEBAR */
+/* PAGEBAR */
+/* PAGEBAR */
+.yt_panels_pagebarinfo h1 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px; }
+
+/* COSMETICS */
+/* COSMETICS */
+/* COSMETICS */
+.card,
+.yt_grid,
+.yt_propertylist.t_tabbed {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
+
+.btn {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); }
+
+.yt_grid .tg_table {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.yt_grid .tg_pager {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
