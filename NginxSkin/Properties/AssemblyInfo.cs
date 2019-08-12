@@ -30,3 +30,5 @@ using YetaWF.PackageAttributes;
 [assembly: RequiresPackage("YetaWF.Text")]
 [assembly: RequiresPackage("YetaWF.TinyLogin")]
 [assembly: RequiresPackage("YetaWF.TinyLanguage")]
+
+[assembly: RequiresPackage("Softelvdm.NginxControl")] // logo from config

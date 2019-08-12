@@ -1,5 +1,6 @@
 ﻿/* Copyright © 2019 Softel vdm, Inc. - https://yetawf.com/Documentation/YetaWF/Licensing */
 
+using Softelvdm.Modules.NginxControl.DataProvider;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -85,19 +86,28 @@ namespace YetaWF.Skins.NginxSkin.Pages {
             if (string.IsNullOrEmpty(copyright))
                 copyright = Manager.CurrentSite.CopyrightEvaluated;
 
+            Config config = await ConfigDataProvider.GetConfigAsync();
+            string logo = config.Logo;
+
             hb.Append($@"
 <body class='{Manager.PageCss()}'>
     <noscript><div class='yDivWarning' style='height:100px;text-align:center;vertical-align:middle'>This site requires Javascript</div></noscript>
 
     {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
-        m.CssClass = "skinLockedStatus d-print-none";
-    })}
+                m.CssClass = "skinLockedStatus d-print-none";
+            })}
 
     <!-- Main Menu Navbar -->
-    <nav class='navbar navbar-expand-lg navbar-dark bg-dark d-print-none mt-3 mt-lg-0'>
+    <nav class='navbar navbar-expand-lg navbar-dark bg-dark d-print-none mt-3 mt-lg-0'>");
+
+            if (!string.IsNullOrWhiteSpace(logo)) {
+                hb.Append($@"
         <a class='navbar-brand' href='#'>
-            <img src='http://www.statuspie.com/VaultPrivate/Portainer/softel_dc1.png'>
-        </a>
+            <img src='{HAE(logo)}'>
+        </a>");
+            }
+
+            hb.Append($@"
         <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='.yPageMenu'>
             <span class='navbar-toggler-icon'></span>
         </button>
