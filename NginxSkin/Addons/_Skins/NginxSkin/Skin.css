@@ -7689,6 +7689,9 @@ body {
 .skinTinyLogin div.t_nouser.t_logon {
   padding-right: 1ch; }
 
+.skinTinyLogin a {
+  color: silver; }
+
 /* SEARCHINPUT MODULE COSMETICS */
 /* SEARCHINPUT MODULE COSMETICS */
 /* SEARCHINPUT MODULE COSMETICS */

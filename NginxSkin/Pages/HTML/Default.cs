@@ -93,48 +93,20 @@ namespace YetaWF.Skins.NginxSkin.Pages {
         m.CssClass = "skinLockedStatus d-print-none";
     })}
 
-    <!-- Page Header -->
-    <div class='container d-print-none'>
-        <div class='row'>
-            <div class='col-lg-5 mt-0'>
-                {await HtmlHelper.RenderModuleAsync<YetaWF.Modules.Text.Modules.TextModule>(new Guid("{AFA55B5E-1CA5-43c7-B9B3-245C172E0819}"), m => {
-                    m.Name = "Page Logo (Skin)";
-                    m.ShowTitle = false;
-                    m.EditOnPage = false;
-                    m.CssClass = "skinLogo";
-                })}
-            </div>
-            <div class='col-lg-3 mt-2'>");
-
-            if (Manager.CurrentSite.Localization) {
-                hb.Append($@"
-                    {await HtmlHelper.RenderModuleAsync<YetaWF.Modules.TinyLanguage.Modules.TinyLanguageModule>(new Guid("{E24356D7-9F90-42e6-A370-ECDB36FD34F5}"), m => {
-                        m.Name = "Tiny Language (Skin)";
-                        m.CssClass = "skinTinyLanguage";
-                    })}");
-            }
-
-            hb.Append($@"
-            </div>
-            <div class='col-lg-4 mt-2 d-flex justify-content-end'>
-                {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
-                    m.CssClass = "skinTinyLogin";
-                })}
-            </div>
-        </div>
-    </div>
-
     <!-- Main Menu Navbar -->
     <nav class='navbar navbar-expand-lg navbar-dark bg-dark d-print-none mt-3 mt-lg-0'>
-        <div class='container'>
-            <a class='navbar-brand' href='#'></a>
-            <div class='navbar-header'>
-                <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='.yPageMenu'>
-                    <span class='navbar-toggler-icon'></span>
-                </button>
-            </div>
-            {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
-                m.Name = "Main Menu Module (Skin)";
+        <a class='navbar-brand' href='#'>
+            <img src='http://www.statuspie.com/VaultPrivate/Portainer/softel_dc1.png'>
+        </a>
+        <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='.yPageMenu'>
+            <span class='navbar-toggler-icon'></span>
+        </button>
+        {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
+            m.Name = "Main Menu Module (Skin)";
+        })}
+        <div class='justify-content-end'>
+            {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.TinyLogin.Modules.TinyLoginModule>(m => {
+                m.CssClass = "skinTinyLogin";
             })}
         </div>
     </nav>
