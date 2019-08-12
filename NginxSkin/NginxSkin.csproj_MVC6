@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\CoreComponents\Core\Core.csproj" />
+    <ProjectReference Include="..\..\..\Modules\Softelvdm\NginxControl\NginxControl.csproj" />
     <ProjectReference Include="..\..\..\Modules\YetaWF\Menus\Menus.csproj" />
     <ProjectReference Include="..\..\..\Modules\YetaWF\PageEdit\PageEdit.csproj" />
     <ProjectReference Include="..\..\..\Modules\YetaWF\SiteProperties\SiteProperties.csproj" />
