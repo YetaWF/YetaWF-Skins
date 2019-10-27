@@ -190,12 +190,6 @@ label { /* Bold labels are a bit harsh */
 /* Small screens */
 
 @media (max-width: $screen-lg) {
-    #yEditControlDiv {
-        display:none;
-    }
-    #yPageControlDiv {
-        display:none;
-    }
     label {
         font-weight:bold;
     }

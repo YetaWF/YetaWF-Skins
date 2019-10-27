@@ -153,10 +153,6 @@ label {
 
 /* Small screens */
 @media (max-width: 992px) {
-  #yEditControlDiv {
-    display: none; }
-  #yPageControlDiv {
-    display: none; }
   label {
     font-weight: bold; } }
 

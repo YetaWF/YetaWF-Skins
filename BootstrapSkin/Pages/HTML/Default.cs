@@ -180,9 +180,6 @@ namespace YetaWF.Skins.BootstrapSkin.Pages {
         <p>{HE(copyright)}</p>
     </footer>
 
-    {await HtmlHelper.RenderEditControlAsync<YetaWF.Modules.PageEdit.Modules.EditModeModule>()}
-    {await HtmlHelper.RenderPageControlAsync<YetaWF.Modules.PageEdit.Modules.PageControlModule>()}
-
     {await HtmlHelper.RenderUniqueModuleAddOnsAsync()}
 </body>");
 
