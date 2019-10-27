@@ -25,7 +25,6 @@ using YetaWF.PackageAttributes;
     "https://yetawf.com/Documentation/YetaWF/DefaultSkin#License")]
 
 [assembly: RequiresPackage("YetaWF.Menus")]
-[assembly: RequiresPackage("YetaWF.SiteProperties")]
 [assembly: RequiresPackage("YetaWF.Text")]
 [assembly: RequiresPackage("YetaWF.TinyLogin")]
 [assembly: RequiresPackage("YetaWF.TinyLanguage")]

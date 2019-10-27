@@ -87,11 +87,8 @@ namespace YetaWF.Skins.DefaultSkin.Pages {
 
             hb.Append($@"
 <body class='{Manager.PageCss()}'>
-    <noscript><div class='yDivWarning' style='height:100px;text-align:center;vertical-align:middle'>This site requires Javascript</div></noscript>
 
-    {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.SiteProperties.Modules.LockedStatusModule>(m => {
-        m.CssClass = "skinLockedStatus d-print-none";
-    })}
+    {await HtmlHelper.RenderPageStatus()}
 
     <!-- Page Header -->
     <div class='container d-print-none'>
