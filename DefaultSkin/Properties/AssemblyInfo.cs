@@ -19,10 +19,10 @@ using YetaWF.PackageAttributes;
 
 [assembly: Package(PackageTypeEnum.Skin, "YetaWF")]
 [assembly: PackageInfo("https://YetaWF.com/UpdateServer",
-    "https://yetawf.com/Documentation/YetaWF/DefaultSkin",
-    "https://yetawf.com/Documentation/YetaWF/DefaultSkin/Support",
-    "https://yetawf.com/Documentation/YetaWF/DefaultSkin#Release%20Notice",
-    "https://yetawf.com/Documentation/YetaWF/DefaultSkin#License")]
+    "https://yetawf.com/Documentation/YetaWFDefaultSkin",
+    "https://yetawf.com/Documentation/YetaWFDefaultSkin#Support",
+    "https://yetawf.com/Documentation/YetaWFDefaultSkin#Release%20Notice",
+    "https://yetawf.com/Documentation/YetaWFDefaultSkin#License")]
 
 [assembly: RequiresPackage("YetaWF.Menus")]
 [assembly: RequiresPackage("YetaWF.Text")]
