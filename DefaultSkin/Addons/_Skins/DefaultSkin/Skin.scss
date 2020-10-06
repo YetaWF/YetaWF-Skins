@@ -157,9 +157,6 @@ body { /* needed for specificity) */
 .yPage .yPane.yModule {
     padding-bottom:15px;
 }
-.yPopupDyn .yModule {
-    padding-bottom:15px;
-}
 
 /* ACTIONS GAP BETWEEN IMAGE AND TEXT  */
 /* ACTIONS GAP BETWEEN IMAGE AND TEXT  */
@@ -185,23 +182,6 @@ label { /* Bold labels are a bit harsh */
 .yCondense label {
     padding-bottom:0;
     font-weight:bold;
-}
-
-/* Small screens */
-
-@media (max-width: $screen-lg) {
-    label {
-        font-weight:bold;
-    }
-}
-
-/* POPUP */
-/* POPUP */
-/* POPUP */
-
-.yPopup,
-div.k-window-content.yPopupDyn {
-    padding:.5em 2ch 0 2ch;
 }
 
 /* MEGAMENU */

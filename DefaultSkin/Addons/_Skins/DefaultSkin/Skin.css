@@ -126,9 +126,6 @@ body {
 .yPage .yPane.yModule {
   padding-bottom: 15px; }
 
-.yPopupDyn .yModule {
-  padding-bottom: 15px; }
-
 /* ACTIONS GAP BETWEEN IMAGE AND TEXT  */
 /* ACTIONS GAP BETWEEN IMAGE AND TEXT  */
 /* ACTIONS GAP BETWEEN IMAGE AND TEXT  */
@@ -150,18 +147,6 @@ label {
 .yCondense label {
   padding-bottom: 0;
   font-weight: bold; }
-
-/* Small screens */
-@media (max-width: 992px) {
-  label {
-    font-weight: bold; } }
-
-/* POPUP */
-/* POPUP */
-/* POPUP */
-.yPopup,
-div.k-window-content.yPopupDyn {
-  padding: .5em 2ch 0 2ch; }
 
 /* MEGAMENU */
 .YetaWF_Menus_MainMenu ul.t_megamenu_content li.t_megamenu_content {
