@@ -9,12 +9,6 @@
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-
-// .btn {
-//     box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
-// }
-
-
 /* Ownership background colors*/
 $noAnon-color: $gray-200;       /* Can't be seen by anonymous users, OK for regular users */
 $noUser-color: $gray-400;       /* Can't be seen by regular users, OK for anonymous users */
@@ -305,6 +299,9 @@ body { /* needed for specificity) */
 .yt_grid,
 .yt_propertylist.t_tabbed {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,.1);
+}
+.btn {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
 }
 .yt_grid {
     .tg_table {

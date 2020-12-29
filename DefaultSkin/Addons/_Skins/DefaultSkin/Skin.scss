@@ -3,11 +3,6 @@
 $screen-lg : 992px;
 $base-fontsize: 14px;
 
-
-// .btn {
-//     box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
-// }
-
 /* GLOBALS */
 /* GLOBALS */
 /* GLOBALS */
@@ -314,6 +309,9 @@ label { /* Bold labels are a bit harsh */
 .yt_grid,
 .yt_propertylist.t_tabbed {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,.1);
+}
+.btn {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.5);
 }
 .yt_grid {
     .tg_table {
