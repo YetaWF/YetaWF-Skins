@@ -75,13 +75,6 @@ body {
   body.LandingPage .PaneSetFooter {
     display: block; }
 
-/* JQUERY-UI */
-/* JQUERY-UI */
-/* JQUERY-UI */
-.yPage .ui-widget, .yPopup .ui-widget {
-  /* Override jquery-ui font to restore ours */
-  font-size: 14px; }
-
 /* OWNERSHIP */
 /* OWNERSHIP */
 /* OWNERSHIP */

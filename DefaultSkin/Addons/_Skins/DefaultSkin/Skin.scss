@@ -101,16 +101,6 @@ body { /* needed for specificity) */
     }
 }
 
-/* JQUERY-UI */
-/* JQUERY-UI */
-/* JQUERY-UI */
-
-.yPage, .yPopup { // needed for specificity in case jquery css is added later
-    .ui-widget {/* Override jquery-ui font to restore ours */
-        font-size: 14px;
-    }
-}
-
 /* OWNERSHIP */
 /* OWNERSHIP */
 /* OWNERSHIP */
