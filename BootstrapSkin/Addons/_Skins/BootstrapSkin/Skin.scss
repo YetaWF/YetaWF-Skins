@@ -55,16 +55,6 @@ select.t_native {
     background-color: $body-bg;
 }
 
-/* JQUERY-UI */
-/* JQUERY-UI */
-/* JQUERY-UI */
-
-.yPage, .yPopup { // needed for specificity in case jquery css is added later
-    .ui-widget {/* Override jquery-ui font to restore ours */
-        font-size: $font-size-base;
-    }
-}
-
 /* OWNERSHIP */
 /* OWNERSHIP */
 /* OWNERSHIP */

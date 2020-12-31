@@ -7726,13 +7726,6 @@ select.t_native {
   color: #212529;
   background-color: #fff; }
 
-/* JQUERY-UI */
-/* JQUERY-UI */
-/* JQUERY-UI */
-.yPage .ui-widget, .yPopup .ui-widget {
-  /* Override jquery-ui font to restore ours */
-  font-size: 1rem; }
-
 /* OWNERSHIP */
 /* OWNERSHIP */
 /* OWNERSHIP */
