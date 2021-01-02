@@ -1,6 +1,4 @@
 Bootstrap Skin - Customizable through variables, includes all Bootstrap CSS, JavaScript
-JQuerySkin
-KendoSkin
 UsingBootstrap true
 UseDefaultBootstrap false
 UsingBootstrapButtons true

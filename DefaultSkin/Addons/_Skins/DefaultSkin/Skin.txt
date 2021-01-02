@@ -1,6 +1,4 @@
 Default Skin - uses Site Settings, with Bootswatch support (Softel vdm, Inc.)
-JQuerySkin
-KendoSkin
 UsingBootstrap true
 UseDefaultBootstrap true
 UsingBootstrapButtons true
