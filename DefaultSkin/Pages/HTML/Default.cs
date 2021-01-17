@@ -121,19 +121,16 @@ namespace YetaWF.Skins.DefaultSkin.Pages {
     </div>
 
     <!-- Main Menu Navbar -->
-    <nav class='navbar navbar-expand-lg navbar-dark bg-dark d-print-none mt-3 mt-lg-0'>
-        <div class='container'>
-            <a class='navbar-brand' href='#'></a>
-            <div class='navbar-header'>
-                <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='.yPageMenu'>
-                    <span class='navbar-toggler-icon'></span>
-                </button>
-            </div>
-            {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
-                m.Name = "Main Menu Module (Skin)";
-            })}
-        </div>
-    </nav>
+    <div class='container'>
+        {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.Menus.Modules.MenuToggleModule>(m => {
+            m.Target = ".yPageMenu";
+        })}
+    </div>
+    <div class='container'>
+        {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
+            m.Name = "Main Menu Module (Skin)";
+        })}
+    </div>
 
     <!-- Jumbotron -->
     <div class='jumbotron'>

@@ -1,2 +1,3 @@
-﻿Skin.scss
-themes/{BootstrapSkin}/Skin.scss
+﻿# (not used) Uses YetaWF_ComponentsHTML,necolas.github.io.normalize
+Skin.scss
+Themes/{0}.css
