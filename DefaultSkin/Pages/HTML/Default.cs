@@ -7,6 +7,7 @@ using YetaWF.Core;
 using YetaWF.Core.Components;
 using YetaWF.Core.Modules;
 using YetaWF.Core.Packages;
+using YetaWF.Core.Skins;
 using YetaWF.Core.Support;
 
 namespace YetaWF.Skins.DefaultSkin.Pages {
@@ -20,7 +21,7 @@ namespace YetaWF.Skins.DefaultSkin.Pages {
         /// Returns the name of the page.
         /// </summary>
         /// <returns>Returns the name of the page.</returns>
-        public override string GetPageName() { return "Default"; }
+        public override string GetPageName() { return SkinAccess.PAGE_VIEW_DEFAULT; }
 
         /// <summary>
         /// Returns the package implementing the page.
