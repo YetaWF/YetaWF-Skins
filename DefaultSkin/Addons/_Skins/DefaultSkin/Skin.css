@@ -156,7 +156,7 @@
   --inp-error-clr: red;
   --inp-ph-clr: black;
   --inp-ph-opacity: 0.5;
-  --dd-bg: linear-gradient(to bottom,rgba(255,255,255,0.25) 0,rgba(255,255,255,0) 100%);
+  --dd-bg: #f0f0f0 linear-gradient(to bottom,rgba(255,255,255,0.25) 0,rgba(255,255,255,0) 100%);
   --dd-clr: #212529;
   --dd-bg-hover: #ebebeb;
   --dd-clr-hover: #6a6a6a;
@@ -3420,10 +3420,13 @@ h5, .h5 {
   background-color: #343a40;
   padding: .5rem 1rem; }
 
-/* MENU */
 .YetaWF_Menus_MainMenu ul.t_megamenu_content {
   padding: 0 1rem 1rem 1rem !important;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2); }
+
+.YetaWF_Menus_MenuToggle button {
+  margin-top: .25rem;
+  margin-bottom: 1rem; }
 
 footer {
   padding: 20px 0 20px 0;
