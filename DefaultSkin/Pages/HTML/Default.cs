@@ -91,7 +91,7 @@ namespace YetaWF.Skins.DefaultSkin.Pages {
     {await HtmlHelper.RenderPageStatus()}
 
     <!-- Page Header -->
-    <div class='container d-print-none'>
+    <div class='container yNoPrint'>
         <div class='row'>
             <div class='col-lg-5 mt-0'>
                 {await HtmlHelper.RenderModuleAsync<YetaWF.Modules.Text.Modules.TextModule>(new Guid("{AFA55B5E-1CA5-43c7-B9B3-245C172E0819}"), m => {
@@ -127,10 +127,12 @@ namespace YetaWF.Skins.DefaultSkin.Pages {
             m.Target = ".yPageMenu";
         })}
     </div>
-    <div class='container'>
-        {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
-            m.Name = "Main Menu Module (Skin)";
-        })}
+    <div class='MainNavMenu'>
+        <div class='container'>
+            {await HtmlHelper.RenderUniqueModuleAsync<YetaWF.Modules.Menus.Modules.MainMenuModule>(m => {
+                m.Name = "Main Menu Module (Skin)";
+            })}
+        </div>
     </div>
 
     <!-- Jumbotron -->

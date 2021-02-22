@@ -1,43 +1,37 @@
 @charset "UTF-8";
 /* Copyright © 2021 Softel vdm, Inc. - https://yetawf.com/Documentation/YetaWF/Licensing */
 :root {
-  --body-bg: #FFFFFF;
-  --body-clr: #7e7e7e;
+  --body-bg: #ffffff;
+  --body-clr: #212529;
   --body-font: normal normal normal 1rem "Open Sans", sans-serif;
   --body-dis-opacity: 0.5;
-  --a-clr: #6a6a6a;
-  --a-dec: none;
-  --a-clr-hover: #6a6a6a;
-  --a-dec-hover: underline;
-  --a-clr-focus: #9e9e9e;
-  --a-dec-focus: underline;
   --overlay-bg: #aaaaaa;
   --overlay-opacity: 0.5;
-  --mstd-title-font: normal normal normal 1rem "Open Sans", sans-serif;
+  --mstd-title-font: normal normal normal 2rem "Open Sans", sans-serif;
   --mpnl-bg: #f6f6f6;
   --mpnl-clr: #454545;
   --mpnl-border: 1px solid #c5c5c5;
   --mpnl-border-radius: 3px;
   --mpnl-title-font: normal normal normal 1rem "Open Sans", sans-serif;
-  --mpnl-link-font: normal normal normal 1rem "Open Sans", sans-serif;
-  --mm-0-bg: #FFFFFF;
-  --mm-0-clr: #7e7e7e;
+  --mpnl-link-font: normal normal normal 0.7rem "Open Sans", sans-serif;
+  --mm-0-bg: #343a40;
+  --mm-0-clr: rgba(255,255,255,0.5);
   --mm-0-font: normal normal normal 1rem "Open Sans", sans-serif;
   --mm-0-border: none;
   --mm-0-border-radius: 3px;
   --mm-0-padding: 0;
-  --mm-0-a-bg: #FFFFFF;
-  --mm-0-a-clr: #7e7e7e;
-  --mm-0-a-bg-hover: #ebebeb;
-  --mm-0-a-clr-hover: #6a6a6a;
-  --mm-0-a-bg-path: #ebebeb;
-  --mm-0-a-clr-path: #6a6a6a;
+  --mm-0-a-bg: #343a40;
+  --mm-0-a-clr: rgba(255,255,255,0.5);
+  --mm-0-a-bg-hover: #343a40;
+  --mm-0-a-clr-hover: rgba(255,255,255,0.8);
+  --mm-0-a-bg-path: #343a40;
+  --mm-0-a-clr-path: rgba(255,255,255,0.8);
   --mm-0-a-padding: 0.7em 1.5em;
   --mm-0-a-small-padding: 0.7em 1.5em;
   --mm-0-ddwidth: 16px;
   --mm-0-ddheight: 16px;
   --mm-1-bg: #FFFFFF;
-  --mm-1-clr: #7e7e7e;
+  --mm-1-clr: #6a6a6a;
   --mm-1-font: normal normal normal 1rem "Open Sans", sans-serif;
   --mm-1-border: 1px solid #c5c5c5;
   --mm-1-border-radius: 3px;
@@ -45,12 +39,12 @@
   --mm-1-padding: 0.3em 0;
   --mm-1-small-padding: 0.5em 0 0.5em 0;
   --mm-1-a-bg: #FFFFFF;
-  --mm-1-a-clr: #7e7e7e;
+  --mm-1-a-clr: #6a6a6a;
   --mm-1-a-bg-hover: #ebebeb;
   --mm-1-a-clr-hover: #6a6a6a;
   --mm-1-a-bg-path: #ebebeb;
   --mm-1-a-clr-path: #6a6a6a;
-  --mm-1-a-padding: 0.1em 1.5em 0.1em 1.5em;
+  --mm-1-a-padding: 0.4em 1.5em 0.4em 1.5em;
   --mm-1-a-small-padding: 0.4em 0.5em 0.4em 0.75em;
   --mm-1-ddwidth: 16px;
   --mm-1-ddheight: 16px;
@@ -59,7 +53,7 @@
   --mm-1-mm-clr: #7e7e7e;
   --mm-1-mm-font: normal normal normal 1rem "Open Sans", sans-serif;
   --mm-2-bg: #FFFFFF;
-  --mm-2-clr: #7e7e7e;
+  --mm-2-clr: #6a6a6a;
   --mm-2-font: normal normal normal 1rem "Open Sans", sans-serif;
   --mm-2-border: 1px solid #c5c5c5;
   --mm-2-border-radius: 3px;
@@ -67,7 +61,7 @@
   --mm-2-padding: 0.3em 0;
   --mm-2-small-padding: 0.5em 0;
   --mm-2-a-bg: #FFFFFF;
-  --mm-2-a-clr: #7e7e7e;
+  --mm-2-a-clr: #6a6a6a;
   --mm-2-a-bg-hover: #ebebeb;
   --mm-2-a-clr-hover: #6a6a6a;
   --mm-2-a-bg-path: #ebebeb;
@@ -115,7 +109,7 @@
   --tt-border-radius: 3px;
   --tt-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   --dialog-bg: #FFFFFF;
-  --dialog-clr: #7e7e7e;
+  --dialog-clr: #212529;
   --dialog-title-bg: #cecece;
   --dialog-title-clr: #1d1d1d;
   --dialog-title-font: #7e7e7e;
@@ -145,7 +139,7 @@
   --bar-bg-active: #1a99e2;
   --bar-clr-active: #FFFFFF;
   --bar-border: 1px solid #c5c5c5;
-  --bar-border-radius: 5px;
+  --bar-border-radius: 3px;
   --bar-h1-font-size: 1.25rem;
   --prop-border: 1px solid #c5c5c5;
   --prop-border-radius: 3px;
@@ -154,7 +148,7 @@
   --prop-cat-border: 1px solid #c5c5c5;
   --prop-cat-border-radius: 3px;
   --inp-bg: #FFFFFF;
-  --inp-clr: #7e7e7e;
+  --inp-clr: #212529;
   --inp-border: 1px solid #c5c5c5;
   --inp-border-hover: 1px solid #b1b1b1;
   --inp-border-focus: 1px solid #9d9d9d;
@@ -162,38 +156,44 @@
   --inp-error-clr: red;
   --inp-ph-clr: black;
   --inp-ph-opacity: 0.5;
-  --dd-bg: #FFFFFF;
-  --dd-clr: #7e7e7e;
-  --dd-bg-hover: #FFFFFF;
-  --dd-clr-hover: #7e7e7e;
-  --dd-bg-active: #7ad2f7 linear-gradient(to bottom,rgba(255,255,255,0.4) 0,rgba(255,255,255,0) 100%) 50% 50%;
-  --dd-clr-active: #003f59;
-  --dd-bg-focus: #FFFFFF;
-  --dd-clr-focus: #7e7e7e;
+  --dd-bg: linear-gradient(to bottom,rgba(255,255,255,0.25) 0,rgba(255,255,255,0) 100%);
+  --dd-clr: #212529;
+  --dd-bg-hover: #ebebeb;
+  --dd-clr-hover: #6a6a6a;
+  --dd-bg-active: #2fa4e7;
+  --dd-clr-active: #9e9e9e;
+  --dd-bg-focus: #d7d7d7;
+  --dd-clr-focus: #565656;
   --dd-border: 1px solid #c5c5c5;
   --dd-border-hover: 1px solid #b1b1b1;
   --dd-border-focus: 1px solid #9d9d9d;
   --dd-border-radius: 3px;
   --dd-p-bg: #FFFFFF;
-  --dd-p-clr: #7e7e7e;
+  --dd-p-clr: #212529;
   --dd-p-bg-hover: #ebebeb;
-  --dd-p-clr-hover: #6a6a6a;
+  --dd-p-clr-hover: #212529;
   --dd-p-bg-focus: #d7d7d7;
-  --dd-p-clr-focus: #565656;
+  --dd-p-clr-focus: #212529;
   --dd-p-border: 1px solid #c5c5c5;
   --dd-p-border-radius: 3px;
   --dd-p-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
   --dd-p-shadow-focus: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
-  --button-bg: #FFFFFF;
-  --button-clr: #7e7e7e;
-  --button-bg-hover: #ebebeb;
-  --button-clr-hover: #6a6a6a;
-  --button-bg-focus: #d7d7d7;
-  --button-clr-focus: #565656;
+  --a-clr: #007bff;
+  --a-dec: none;
+  --a-clr-hover: #007bff;
+  --a-dec-hover: underline;
+  --a-clr-focus: #007bff;
+  --a-dec-focus: underline;
+  --button-bg: #007bff;
+  --button-clr: #ffffff;
+  --button-bg-hover: #0069d9;
+  --button-clr-hover: #ffffff;
+  --button-bg-focus: #0069d9;
+  --button-clr-focus: #ffffff;
   --button-border: 1px solid #c5c5c5;
   --button-border-radius: 3px;
-  --button-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
-  --button-focus-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+  --button-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+  --button-focus-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
   --buttonlite-bg: #f6f6f6;
   --buttonlite-clr: #454545;
   --buttonlite-bg-hover: #e2e2e2;
@@ -207,18 +207,18 @@
   --pbar-border: 1px solid #c5c5c5;
   --pbar-border-radius: 3px;
   --tbl-bg: #FFFFFF;
-  --tbl-clr: #7e7e7e;
+  --tbl-clr: #212529;
   --tbl-bg-hover: #ebebeb;
-  --tbl-clr-hover: #6a6a6a;
+  --tbl-clr-hover: #212529;
   --tbl-bg-active: #2fa4e7;
-  --tbl-clr-active: #9e9e9e;
+  --tbl-clr-active: #212529;
   --tbl-bg-focus: #d7d7d7;
-  --tbl-clr-focus: #565656;
+  --tbl-clr-focus: #212529;
   --tbl-bg-highlight: silver;
   --tbl-clr-highlight: white;
   --tbl-bg-lowlight: ghostwhite;
   --tbl-clr-lowlight: darkslategray;
-  --tbl-font: normal normal normal 0.7rem "Open Sans", sans-serif;
+  --tbl-font: normal normal normal 0.8rem "Open Sans", sans-serif;
   --tbl-border: 1px solid #c5c5c5;
   --tbl-border-lite: 1px solid #d9d9d9;
   --tbl-border-radius: 3px;
@@ -229,7 +229,7 @@
   --tbl-header-clr-hover: #313131;
   --tbl-header-bg-active: #1a99e2;
   --tbl-header-clr-active: #FFFFFF;
-  --tbl-header-font: normal normal normal 0.7rem "Open Sans", sans-serif;
+  --tbl-header-font: normal normal normal 0.8rem "Open Sans", sans-serif;
   --tabs-bg: #FFFFFF;
   --tabs-clr: #7e7e7e;
   --tabs-strip-bg: #cecece;
@@ -3386,14 +3386,44 @@ html {
 /* GLOBALS */
 /* GLOBALS */
 /* GLOBALS */
-h1 {
-  margin-top: 1.5rem; }
+p, li {
+  line-height: 1.5; }
 
-h2 {
-  margin-top: .9rem; }
+form p,
+form li {
+  line-height: 1.2; }
 
-h3 {
-  margin-top: .2rem; }
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  color: var(--body-clr);
+  font-weight: bold; }
+
+h1, .h1 {
+  margin-top: 1em;
+  padding-bottom: 10px;
+  font-size: 1.5rem; }
+
+h2, .h2 {
+  margin-top: .6em;
+  font-size: 24px; }
+
+h3, .h3 {
+  font-size: 20px; }
+
+h4, .h4 {
+  font-size: 18px; }
+
+h5, .h5 {
+  font-size: 16px; }
+
+.MainNavMenu {
+  background-color: #343a40;
+  padding: .5rem 1rem; }
+
+/* MENU */
+.YetaWF_Menus_MainMenu ul.t_megamenu_content {
+  padding: 0 1rem 1rem 1rem !important;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2); }
 
 footer {
   padding: 20px 0 20px 0;
@@ -3401,18 +3431,22 @@ footer {
 
 /* Landing Page - add LandingPage to page as Page Css to show the jumbotron */
 /* if there is no jumbotron, add some space below the menu */
-body {
-  /* needed for specificity) */ }
-  body .jumbotron {
-    margin-bottom: 0; }
-  body:not(.yEditMode) .jumbotron {
-    display: none; }
-  body.LandingPage .jumbotron {
-    display: block; }
-  body:not(.yEditMode) .PaneSetFooter {
-    display: none; }
-  body.LandingPage .PaneSetFooter {
-    display: block; }
+.jumbotron {
+  background: #e9ecef;
+  padding: 4rem 2rem; }
+
+body:not(.yEditMode) .jumbotron {
+  display: none; }
+
+body.LandingPage .jumbotron {
+  display: block; }
+
+body:not(.yEditMode) .PaneSetFooter {
+  display: none; }
+
+body.LandingPage .PaneSetFooter {
+  background-color: #eee;
+  display: block; }
 
 /* TINYLOGIN MODULE COSMETICS */
 /* TINYLOGIN MODULE COSMETICS */
