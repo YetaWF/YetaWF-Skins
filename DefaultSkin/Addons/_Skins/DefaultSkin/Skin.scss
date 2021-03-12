@@ -366,37 +366,3 @@ body.LandingPage .PaneSetFooter {
         padding-right:1ch;
     }
 }
-
-/* NEWS FEED */
-/* NEWS FEED */
-/* NEWS FEED */
-
-.YetaWF_Feed_Feed {
-    .t_news {
-        border:1px solid silver;
-        border-radius:5px;
-        padding:1em 1ch 1em 1ch;
-        .t_header {
-            padding-bottom:1em;
-            .t_title {
-                font-size: 1.3rem;
-            }
-        }
-        .t_headerentry {
-            border:1px solid silver;
-            border-radius:5px;
-            padding:1em 1ch 1em 1ch;
-            margin-bottom:.5em;
-            .t_title, .t_text {
-                padding-bottom:.5em;
-            }
-            .t_date {
-                font-size: .8rem;
-            }
-        }
-        .t_entry {
-            padding-top:.2em;
-            padding-bottom:.2em;
-        }
-    }
-}
