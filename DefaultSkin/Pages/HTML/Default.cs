@@ -81,7 +81,7 @@ namespace YetaWF.Skins.DefaultSkin.Pages {
 
             HtmlBuilder hb = new HtmlBuilder();
 
-            string copyright = Manager.CurrentPage.CopyrightEvaluated;
+            string? copyright = Manager.CurrentPage.CopyrightEvaluated;
             if (string.IsNullOrEmpty(copyright))
                 copyright = Manager.CurrentSite.CopyrightEvaluated;
 
