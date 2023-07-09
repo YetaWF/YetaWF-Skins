@@ -36,3 +36,4 @@ app.config
 
 *.cshtml
 *.deps.json
+*.user
