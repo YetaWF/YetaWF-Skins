@@ -22,6 +22,13 @@ PopupSkins:
       Width: 1000
       Height: 700
       MaximizeButton: false
+    - Name: Popup (Fixed)
+      ViewName: PopupFixed
+      Description: Standard popup window
+      CSS: popup
+      Width: 1000
+      Height: 700
+      MaximizeButton: false
     - Name: Medium Popup
       ViewName: PopupMedium
       Description: Medium popup window
